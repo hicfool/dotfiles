@@ -1,4 +1,4 @@
-**disclaimer**: all my dots are messy
+**disclaimer:** all my dots are messy
 
 **post clean arch installation**
 
