@@ -4,6 +4,7 @@
 - wm: `i3`
 - editor: `neovim`
 - term: `alacritty`
+- comp: `picom`
 - img: `feh`
 - font: `terminus`
 
