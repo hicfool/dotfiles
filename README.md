@@ -1,10 +1,11 @@
 **disclaimer:** all my dots are messy
 
 **what i use**
-- i3
-- neovim
-- alacritty
-- terminus
+- wm: `i3`
+- editor: `neovim`
+- terminal: `alacritty`
+- image viewer: `feh`
+- font: `terminus`
 
 **extras**
 - set keyboard-layout: `loadkeys pt-latin1` & `localectl set-x11-keymap pt`
