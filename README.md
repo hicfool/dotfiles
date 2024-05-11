@@ -3,8 +3,8 @@
 **what i use**
 - wm: `i3`
 - editor: `neovim`
-- terminal: `alacritty`
-- image viewer: `feh`
+- term: `alacritty`
+- img: `feh`
 - font: `terminus`
 
 **extras**
