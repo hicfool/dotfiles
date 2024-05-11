@@ -11,6 +11,7 @@ syntax on
 set number
 set guicursor=
 set shiftwidth=4 smarttab
+set noswapfile
 
 "KEYS
 map <C-n> <esc>:set rnu!<CR>
