@@ -9,7 +9,7 @@ set $color1 "#928374"
 
 #OPEN
 bindsym $mod+Return exec alacritty
-bindsym $mod+d exec dmenu_run -fn "Terminus-11" -nb $bg -nf $fg -sb $color1 -sf $fg -p "> " -l "4"
+bindsym $mod+d exec dmenu_run -fn "Terminus-11" -nb $bg -nf $fg -sb $color1 -sf $fg -p "> " -l "8" -b
 
 #USE MOUSE TO MOVE WINDOW
 floating_modifier $mod
