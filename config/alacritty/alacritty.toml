@@ -31,6 +31,10 @@ size = 11
 [font.normal]
 family = "Terminus"
 
+[window.dimensions]
+columns = 75
+lines = 25
+
 #[window.padding]
-#x = 12
-#y = 12
+#x = 16
+#y = 16
