@@ -1,4 +1,4 @@
-###### *<ins>DISCLAIMER</ins>: all my dots are messy*
+###### *<ins>DISCLAIMER</ins>: All my dots are messy.*
 ###### [Image](https://i.imgur.com/7OPWANM.png)
 ---
 ## What I use
