@@ -1,5 +1,5 @@
 ## What I use
-- WM: `I3`
+- Window manager: `I3`
 - Editor: `Neovim`
 - Terminal: `Alacritty`
 - Compositor: `Picom`
