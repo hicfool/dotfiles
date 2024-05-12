@@ -1,4 +1,4 @@
-*<ins>disclaimer:</ins> all my dots are messy*
+*<ins>disclaimer</ins>: all my dots are messy*
 
 ## what i use
 - wm: `i3`
