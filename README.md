@@ -1,5 +1,5 @@
 ###### *<ins>disclaimer</ins>: all my dots are messy*
-###### [setup](https://i.imgur.com/7OPWANM.png)
+###### [ex](https://i.imgur.com/7OPWANM.png)
 
 ## What I use
 - WM: `I3`
