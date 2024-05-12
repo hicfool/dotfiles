@@ -1,4 +1,4 @@
-***disclaimer:** all my dots are messy*
+*<u>disclaimer:</u> all my dots are messy*
 
 ## what i use
 - wm: `i3`
