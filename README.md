@@ -8,6 +8,7 @@
 - COMP: `Picom`
 - IMG: `Feh`
 - FONT: `Terminus`
+- THEME: `Gruvbox`
 
 ## Stuff
 - Set keyboard-layout: `loadkeys pt-latin1` & `localectl set-x11-keymap pt`
