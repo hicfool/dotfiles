@@ -2,15 +2,15 @@
 
 [png](https://i.imgur.com/7OPWANM.png)
 
-## WHAT I USE
-- wm: `i3`
-- editor: `neovim`
-- term: `alacritty`
-- comp: `picom`
-- img: `feh`
-- font: `terminus`
+## What I use
+- WM: `i3`
+- EDITOR: `neovim`
+- TERM: `alacritty`
+- COMP: `picom`
+- IMG: `feh`
+- FONT: `terminus`
 
-## STUFF
-- set keyboard-layout: `loadkeys pt-latin1` & `localectl set-x11-keymap pt`
-- replace Mac media keys with Fn keys: `echo 0 | sudo tee /sys/module/hid_apple/parameters/fnmode`
-- fix missing text characters/emojis: `sudo pacman -S noto-fonts noto-fonts-extra noto-fonts-cjk noto-fonts-emoji`
+## Stuff
+- Set keyboard-layout: `loadkeys pt-latin1` & `localectl set-x11-keymap pt`
+- Replace Mac media keys with Fn keys: `echo 0 | sudo tee /sys/module/hid_apple/parameters/fnmode`
+- Fix missing text characters/emojis: `sudo pacman -S noto-fonts noto-fonts-extra noto-fonts-cjk noto-fonts-emoji`
