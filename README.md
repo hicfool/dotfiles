@@ -13,4 +13,4 @@
 - Replace Mac media keys with Fn keys: `echo 0 | sudo tee /sys/module/hid_apple/parameters/fnmode`
 - Fix missing text characters/emojis: `sudo pacman -S noto-fonts noto-fonts-extra noto-fonts-cjk noto-fonts-emoji`
 
-### *<ins>disclaimer</ins>: all my dots are messy*
+###### *<ins>disclaimer</ins>: all my dots are messy*
