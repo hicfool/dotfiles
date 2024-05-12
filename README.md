@@ -1,6 +1,6 @@
 *<ins>disclaimer</ins>: all my dots are messy*
 
-[.png](https://raw.githubusercontent.com/hicfool/dots/main/setup.png)
+[png](https://raw.githubusercontent.com/hicfool/dots/main/setup.png)
 
 ## what i use
 - wm: `i3`
