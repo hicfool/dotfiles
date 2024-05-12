@@ -3,12 +3,12 @@
 [png](https://i.imgur.com/7OPWANM.png)
 
 ## What I use
-- WM: `i3`
-- EDITOR: `neovim`
-- TERM: `alacritty`
-- COMP: `picom`
-- IMG: `feh`
-- FONT: `terminus`
+- WM: `I3`
+- EDITOR: `Neovim`
+- TERM: `Alacritty`
+- COMP: `Picom`
+- IMG: `Feh`
+- FONT: `Terminus`
 
 ## Stuff
 - Set keyboard-layout: `loadkeys pt-latin1` & `localectl set-x11-keymap pt`
