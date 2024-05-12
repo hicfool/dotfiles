@@ -2,7 +2,7 @@
 ###### [setup](https://i.imgur.com/7OPWANM.png)
 
 ## What I use
-- WM: `I3`
+- WM: `i3`
 - EDITOR: `Neovim`
 - TERM: `Alacritty`
 - COMP: `Picom`
