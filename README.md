@@ -1,11 +1,11 @@
 ## What I use
-- Window manager: `I3`
-- Editor: `Neovim`
-- Terminal: `Alacritty`
-- Compositor: `Picom`
-- Image viewer: `Feh`
-- Font: `Terminus`
-- Theme: `Gruvbox`
+- Window manager: `i3`
+- Editor: `nvim`
+- Terminal: `alacritty`
+- Compositor: `picom`
+- Image viewer/wallpaper: `feh` `hsetroot`
+- Font: `terminus`
+- Theme: `gruvbox`
 
 ## Stuff
 - Set keyboard-layout: `loadkeys pt-latin1` & `localectl set-x11-keymap pt`
