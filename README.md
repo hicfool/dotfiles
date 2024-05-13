@@ -1,5 +1,5 @@
 ## What I use
-- Window manager: ```i3```
+- Window manager: `i3`
 - Terminal: `alacritty`
 - Editor: `nvim`
 - Font: `terminus`
