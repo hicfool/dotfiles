@@ -5,6 +5,7 @@
 What I use
 ----------
 i3
+dmenu
 alacritty
 nvim
 terminus-font
