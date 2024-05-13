@@ -1,5 +1,5 @@
 set $mod Mod4
-font pango:Terminus 11
+font pango:Monospace 9
 set $refresh_i3status killall -SIGUSR1 i3status
 
 # Color variables
@@ -10,7 +10,7 @@ set $black "#928374"
 # Alacritty
 bindsym $mod+Return exec alacritty
 # Dmenu
-bindsym $mod+d exec dmenu_run -p "->" -l "12" -c -fn "Terminus-11" -nb $bg -nf $fg -sb $black -sf $fg
+bindsym $mod+d exec dmenu_run -l "12" -c -fn "Monospace-9" -nb $bg -nf $fg -sb $black -sf $fg
 
 # Use mouse to move window
 floating_modifier $mod
