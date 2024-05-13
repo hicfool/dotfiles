@@ -1,11 +1,11 @@
 ## What I use
 - Window manager: `i3`
-- Editor: `nvim`
 - Terminal: `alacritty`
-- Compositor: `picom`
-- Image viewer/wallpaper app: `feh` / `hsetroot`
+- Editor: `nvim`
 - Font: `terminus`
 - Theme: `gruvbox`
+- Compositor: `picom`
+- Image viewer/wallpaper app: `feh` / `hsetroot`
 
 ## Stuff
 - Set keyboard-layout: `loadkeys pt-latin1` & `localectl set-x11-keymap pt`
