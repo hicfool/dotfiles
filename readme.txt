@@ -8,7 +8,7 @@ i3
 dmenu (patched)
 alacritty
 nvim
-terminus-font
+monospace
 gruvbox
 picom
 feh / hsetroot
