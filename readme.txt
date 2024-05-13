@@ -20,4 +20,4 @@ Stuff
 
 Image
 -----
-https://i.imgur.com/iSOqquq.png
+https://i.imgur.com/yu3w0XQ.png
