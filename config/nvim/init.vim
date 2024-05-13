@@ -2,8 +2,8 @@
 call plug#begin()
     Plug 'junegunn/goyo.vim'
     Plug 'junegunn/limelight.vim'
-    Plug 'nessss/vim-gml'
     Plug 'ellisonleao/gruvbox.nvim'
+    Plug 'preservim/vim-markdown'
 call plug#end()
 
 "SETTINGS
