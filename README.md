@@ -5,7 +5,7 @@
 - Font: `terminus`
 - Theme: `gruvbox`
 - Compositor: `picom`
-- Image viewer / wallpaper app: `feh` / `setroot`
+- Image viewer / wallpaper app: `feh` / `hsetroot`
 
 ## Stuff
 - Set keyboard-layout: `loadkeys pt-latin1` & `localectl set-x11-keymap pt`
