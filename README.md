@@ -2,7 +2,7 @@
 - Window manager: `i3`
 - Terminal: `alacritty`
 - Editor: `nvim`
-- Font: `terminus`
+- Font: `terminus-font`
 - Theme: `gruvbox`
 - Compositor: `picom`
 - Image viewer / wallpaper app: `feh` / `hsetroot`
