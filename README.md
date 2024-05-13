@@ -3,7 +3,7 @@
 - Editor: `nvim`
 - Terminal: `alacritty`
 - Compositor: `picom`
-- Image viewer/wallpaper: `feh` `hsetroot`
+- Image viewer/wallpaper: `feh`/`hsetroot`
 - Font: `terminus`
 - Theme: `gruvbox`
 
