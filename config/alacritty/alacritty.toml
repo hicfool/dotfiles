@@ -29,7 +29,7 @@ style = "Block"
 size = 9
 
 [font.normal]
-family = "Monospace"
+family = "Noto Sans Mono"
 
 [window.dimensions]
 columns = 75
