@@ -1,7 +1,6 @@
 " Plugins
 call plug#begin()
     Plug 'ellisonleao/gruvbox.nvim'
-    Plug 'preservim/vim-markdown'
     Plug 'junegunn/goyo.vim'
     Plug 'junegunn/limelight.vim'
 call plug#end()
