@@ -4,13 +4,13 @@
 
 What I use
 ----------
--> Window manager: i3
--> Terminal: alacritty
--> Editor: nvim
--> Font: terminus-font
--> Theme: gruvbox
--> Compositor: picom
--> Image viewer / wallpaper app: feh / hsetroot
+-> i3
+-> alacritty
+-> nvim
+-> terminus-font
+-> gruvbox
+-> picom
+-> feh / hsetroot
 
 Stuff
 -----
