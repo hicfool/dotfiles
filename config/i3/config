@@ -113,7 +113,7 @@ client.placeholder      $color1     $color1     $fg      $color1       $color1
 client.background       $bg
 
 #BORDER
-for_window [class="^.*"] border normal 0
+for_window [class="^.*"] border normal 1
 
 #GAPS
 gaps inner 24
@@ -121,4 +121,5 @@ gaps inner 24
 #EXEC
 exec_always pulseaudio &
 exec_always picom &
-exec_always feh --bg-scale ~/Pictures/Tranquility.png &
+exec_always hsetroot -solid "$bg" &
+#exec_always feh --bg-scale ~/Pictures/Tranquility.png &
