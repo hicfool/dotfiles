@@ -2,51 +2,51 @@ set $mod Mod4
 font pango:Terminus 11
 set $refresh_i3status killall -SIGUSR1 i3status
 
-#Color variables
+# Color variables
 set $bg "#282828"
 set $fg "#fbf1c7"
 set $black "#928374"
 
-#Alacritty
+# Alacritty
 bindsym $mod+Return exec alacritty
-#Dmenu
+# Dmenu
 bindsym $mod+d exec dmenu_run -p "->" -l "12" -c -fn "Terminus-11" -nb $bg -nf $fg -sb $black -sf $fg
 
-#Use mouse to move window
+# Use mouse to move window
 floating_modifier $mod
 
-#Kill focused window
+# Kill focused window
 bindsym $mod+q kill
 
-#Change focus
+# Change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
 focus_follows_mouse no
 
-#Move focused window
+# Move focused window
 bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
-#Split horizontal
+# Split horizontal
 bindsym $mod+x split h
 
-#Split vertical
+# Split vertical
 bindsym $mod+y split v
 
-#Fullscreen focused window
+# Fullscreen focused window
 bindsym $mod+f fullscreen toggle
 
-#Toggle between floating and tiling
+# Toggle between floating and tiling
 bindsym $mod+space floating toggle
 
-#Toggle focus between floating and tiling
+# Toggle focus between floating and tiling
 bindsym $mod+Shift+space focus mode_toggle
 
-#Define workspaces
+# Define workspaces
 set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
@@ -58,7 +58,7 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
-#Switch workspaces
+# Switch workspaces
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
 bindsym $mod+3 workspace number $ws3
@@ -70,7 +70,7 @@ bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
 
-#Move window to workspace
+# Move window to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2
 bindsym $mod+Shift+3 move container to workspace number $ws3
@@ -82,14 +82,14 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
-#Reload config
+# Reload config
 bindsym $mod+Shift+c reload
-#Restart i3
+# Restart i3
 bindsym $mod+Shift+r restart
-#Quit i3
+# Quit i3
 bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
-#Resize focused window
+# Resize focused window
 bindsym $mod+r mode "resize"
 
 mode "resize" {
@@ -98,14 +98,14 @@ mode "resize" {
     bindsym k resize shrink height 10 px or 10 ppt
     bindsym l resize grow width 10 px or 10 ppt
 
-    #Toggle off resize mode
+    # Toggle off resize mode
     bindsym Return mode "default"
     bindsym Escape mode "default"
     bindsym $mod+r mode "default"
 }
 
-#Window colors
-#Class                  Border     Bg      Text     Indicator    Child border
+# Window colors
+# Class                 Border     Bg      Text     Indicator    Child border
 client.focused          $black     $bg     $fg      $black       $black
 client.focused_inactive $black     $bg     $fg      $black       $black
 client.unfocused        $black     $bg     $fg      $black       $black
@@ -113,14 +113,14 @@ client.urgent           $black     $bg     $fg      $black       $black
 client.placeholder      $black     $bg     $fg      $black       $black
 client.background       $bg
 
-#Set border
+# Set border
 for_window [class="^.*"] border normal 1
 
-#Set gaps
+# Set gaps
 gaps inner 24
 
-#Exec
+# Exec
 exec_always pulseaudio --start &
 exec_always picom &
 exec_always hsetroot -solid "$bg" &
-#exec_always feh --bg-scale ~/Pictures/Tranquility.png &
+# exec_always feh --bg-scale ~/Pictures/Tranquility.png &
