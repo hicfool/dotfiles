@@ -26,15 +26,15 @@ foreground = "0xebdbb2"
 style = "Block"
 
 [font]
-size = 11
+size = 9
 
 [font.normal]
-family = "Terminus"
+family = "Monospace"
 
 [window.dimensions]
 columns = 75
 lines = 25
 
-#[window.padding]
-#x = 16
-#y = 16
+[window.padding]
+x = 32
+y = 32
