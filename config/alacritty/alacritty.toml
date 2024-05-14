@@ -10,7 +10,3 @@ family = "Roboto Mono"
 [window.dimensions]
 columns = 64
 lines = 24
-
-[window.padding]
-x = 32
-y = 32
