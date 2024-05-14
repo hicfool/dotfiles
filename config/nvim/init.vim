@@ -5,11 +5,11 @@ call plug#begin()
 call plug#end()
 
 " Settings
-syntax on
-set number
-set guicursor=
-set shiftwidth=4 smarttab
 set noswapfile
+set shiftwidth=4 smarttab
+set guicursor=
+set number
+syntax on
 
 " Keys
 map <C-n> <esc>:set rnu!<CR>
