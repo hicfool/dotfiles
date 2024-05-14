@@ -10,7 +10,7 @@ alacritty
 nvim
 picom
 feh / hsetroot
-roboto mono
+roboto mono (9px)
 pywal (base16-nord)
 
 Stuff
