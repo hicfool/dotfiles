@@ -18,4 +18,3 @@ map <C-l> <esc>:Limelight!!<CR>
 
 " Theme
 color wal
-set background=dark
