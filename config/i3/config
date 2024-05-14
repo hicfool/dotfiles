@@ -112,7 +112,7 @@ client.urgent           $fg     $bg     $fg      $fg       $fg
 client.placeholder      $fg     $bg     $fg      $fg       $fg
 client.background       $fg
 
-# Set border width, and title format
+# Set border's thickness, and window title format
 for_window [class="^.*"] border normal 1
 for_window [class=".*"] title_format "%title"
 title_align center
