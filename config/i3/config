@@ -116,7 +116,7 @@ client.background       $fg
 for_window [class="^.*"] border normal 1
 
 # Set gaps
-gaps inner 40
+gaps inner 32
 
 # Exec
 exec_always pulseaudio --start &
