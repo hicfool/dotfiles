@@ -21,4 +21,4 @@ Fix missing text characters/emojis: sudo pacman -S noto-fonts noto-fonts-extra n
 
 Image
 -----
-https://i.imgur.com/yu3w0XQ.png
+https://i.imgur.com/Fg0SjxY.png
