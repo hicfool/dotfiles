@@ -8,7 +8,7 @@ i3
 dmenu (patched)
 alacritty
 nvim
-noto-sans-mono
+noto sans mono
 gruvbox
 picom
 feh / hsetroot
