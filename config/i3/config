@@ -114,6 +114,8 @@ client.background       $fg
 
 # Set border
 for_window [class="^.*"] border normal 1
+for_window [class=".*"] title_format "%title"
+title_align center
 
 # Set gaps
 gaps inner 32
