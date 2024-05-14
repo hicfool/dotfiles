@@ -11,7 +11,7 @@ nvim
 picom
 feh / hsetroot
 noto sans mono
-gruvbox
+pywal (base16-nord)
 
 Stuff
 -----
@@ -21,4 +21,4 @@ Fix missing text characters/emojis: sudo pacman -S noto-fonts noto-fonts-extra n
 
 Image
 -----
-https://i.imgur.com/Fg0SjxY.png
+https://i.imgur.com/Cv2xUyi.png
