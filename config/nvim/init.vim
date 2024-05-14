@@ -1,6 +1,5 @@
 " Plugins
 call plug#begin()
-    Plug 'ellisonleao/gruvbox.nvim'
     Plug 'junegunn/goyo.vim'
     Plug 'junegunn/limelight.vim'
 call plug#end()
@@ -18,5 +17,5 @@ map <C-g> <esc>:Goyo<CR>
 map <C-l> <esc>:Limelight!!<CR>
 
 " Theme
-color gruvbox
+color wal
 set background=dark
