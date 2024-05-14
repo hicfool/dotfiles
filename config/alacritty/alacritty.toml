@@ -32,8 +32,8 @@ size = 9
 family = "Noto Sans Mono"
 
 [window.dimensions]
-columns = 75
-lines = 25
+columns = 64
+lines = 24
 
 [window.padding]
 x = 32
