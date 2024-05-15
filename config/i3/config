@@ -82,6 +82,7 @@ mode "resize" {
     bindsym Escape mode "default"
     bindsym $mod+r mode "default"
 }
+
 # Window colors
 # Class                 Border  Bg      Text     Indicator Child border
 client.focused          $fg     $bg     $fg      $fg       $fg
