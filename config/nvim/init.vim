@@ -6,7 +6,10 @@ call plug#end()
 
 " Settings
 set noswapfile
-set shiftwidth=4 smarttab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
 set guicursor=
 set number
 syntax on
