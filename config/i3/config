@@ -1,12 +1,12 @@
 set $mod Mod4
-font pango:Roboto Mono 9
+font pango:Noto Sans Mono 9
 set $refresh_i3status killall -SIGUSR1 i3status
 
 set_from_resource $fg i3wm.color7 #f0f0f0
 set_from_resource $bg i3wm.color0 #f0f0f0
 
 bindsym $mod+Return exec alacritty
-bindsym $mod+d exec dmenu_run -l "12" -c -fn "Roboto Mono-9" -nb "$bg" -nf "$fg" -sb "$fg" -sf "$bg"
+bindsym $mod+d exec dmenu_run -l "12" -c -fn "Noto Sans Mono-9" -nb "$bg" -nf "$fg" -sb "$fg" -sf "$bg"
 
 floating_modifier $mod
 
