@@ -5,7 +5,12 @@ style = "Block"
 size = 9
 
 [font.normal]
-family = "Roboto Mono"
+family = "Noto Sans Mono"
+style = "Regular"
+
+[font.bold]
+family = "Noto Sans Mono"
+style = "Regular"
 
 [window.dimensions]
 columns = 64
