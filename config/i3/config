@@ -96,7 +96,7 @@ for_window [class="^.*"] border normal 1
 for_window [class=".*"] title_format "%title"
 title_align center
 
-gaps inner 32
+gaps inner 16
 
 exec_always pulseaudio --start &
 exec_always picom &
