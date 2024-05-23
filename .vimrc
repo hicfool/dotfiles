@@ -12,6 +12,7 @@ set shiftwidth=4
 set expandtab
 set mouse=a
 set timeoutlen=1000 ttimeoutlen=0
+set hlsearch
 set guicursor=
 set number
 syntax on
