@@ -1,17 +1,14 @@
-[cursor]
-style = "Block"
-
-[font]
-size = 9
-
-[font.normal]
-family = "Noto Sans Mono"
-style = "Regular"
-
-[font.bold]
-family = "Noto Sans Mono"
-style = "Regular"
-
 [window.dimensions]
 columns = 64
 lines = 24
+
+[selection]
+save_to_clipboard = true
+
+[cursor]
+style = { shape = "Block", blinking = "Always" }
+blink_interval = 500
+
+[font]
+size = 9
+normal = { family = "Noto Sans Mono" }
