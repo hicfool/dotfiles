@@ -1,12 +1,13 @@
 set $mod Mod4
-font pango:Terminus 12
+font pango:Terminus 11
 set $refresh_i3status killall -SIGUSR1 i3status
 
-set_from_resource $fg i3wm.color7 #f0f0f0
 set_from_resource $bg i3wm.color0 #f0f0f0
+set_from_resource $fg i3wm.color7 #f0f0f0
+set_from_resource $c8 i3wm.color8 #f0f0f0
 
 bindsym $mod+Return exec alacritty
-bindsym $mod+d exec dmenu_run -l "12" -c -fn "Terminus-12" -nb "$bg" -nf "$fg" -sb "$fg" -sf "$bg"
+bindsym $mod+d exec dmenu_run -l "12" -c -fn "Terminus-11" -nb "$bg" -nf "$fg" -sb "$fg" -sf "$bg"
 
 floating_modifier $mod
 
@@ -85,18 +86,18 @@ mode "resize" {
 
 # Window colors
 # Class                 Border  Bg      Text     Indicator Child border
-client.focused          $fg     $bg     $fg      $fg       $fg
-client.focused_inactive $fg     $bg     $fg      $fg       $fg
-client.unfocused        $fg     $bg     $fg      $fg       $fg
-client.urgent           $fg     $bg     $fg      $fg       $fg
-client.placeholder      $fg     $bg     $fg      $fg       $fg
-client.background       $fg
+client.focused          $c8     $c8     $fg      $fg       $c8
+client.focused_inactive $c8     $c8     $fg      $fg       $c8
+client.unfocused        $c8     $c8     $fg      $fg       $c8
+client.urgent           $c8     $c8     $fg      $fg       $c8
+client.placeholder      $c8     $c8     $fg      $fg       $c8
+client.background       $c8
 
-for_window [class="^.*"] border normal 1
+for_window [class="^.*"] border normal 0
 for_window [class=".*"] title_format "%title"
 title_align center
 
-gaps inner 16
+gaps inner 32
 
 exec_always pulseaudio --start &
 exec_always picom &
