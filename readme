@@ -35,6 +35,7 @@ Stuff
         |
         '-- Just add these last 4 lines.
 * Fix i3 colors: `cp .cache/wal/colors.Xresources ~/; mv ~/colors.Xresources ~/.Xresources`
+* Install `jq` for the lemonbar script: `sudo pacman -S jq`
 
 Images
 ------
