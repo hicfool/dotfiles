@@ -7,7 +7,7 @@ set_from_resource $fg i3wm.color7 #DDDDDD
 set_from_resource $c8 i3wm.color8 #404040
 
 bindsym $mod+Return exec --no-startup-id alacritty
-bindsym $mod+d exec --no-startup-id dmenu_run -l "12" -c -fn "Terminus-11" -nb "$bg" -nf "$fg" -sb "$fg" -sf "$bg"
+bindsym $mod+d exec --no-startup-id dmenu_run -l "24" -c -fn "Terminus-11" -nb "$bg" -nf "$fg" -sb "$fg" -sf "$bg"
 
 floating_modifier $mod
 
