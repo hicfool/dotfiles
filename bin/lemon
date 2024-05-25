@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 dt() {
     date "+%T * %e/%m/%G"
