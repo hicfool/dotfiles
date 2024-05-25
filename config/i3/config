@@ -6,7 +6,7 @@ set_from_resource $bg i3wm.color0 #101010
 set_from_resource $fg i3wm.color7 #DDDDDD
 
 bindsym $mod+Return exec --no-startup-id alacritty
-bindsym $mod+d exec --no-startup-id dmenu_run -l "24" -c -fn "Terminus-11" -nb "$bg" -nf "$fg" -sb "$fg" -sf "$bg"
+bindsym $mod+d exec --no-startup-id dmenu_run -b -p "$" -fn "Terminus-11" -nb "$bg" -nf "$fg" -sb "$fg" -sf "$bg"
 
 floating_modifier $mod
 
@@ -68,7 +68,6 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
-bindsym $mod+Shift+q exec "i3-nagbar -t warning -f 'pango:Terminus 11' -m 'Exit i3?' -B 'o/' 'i3-msg exit'"
 
 bindsym $mod+r mode "resize"
 
@@ -85,11 +84,11 @@ mode "resize" {
 
 # Window colors
 # Class                 Border  Bg      Text     Indicator Child border
-client.focused          $bg     $bg     $fg      $fg       $bg
-client.focused_inactive $bg     $bg     $fg      $fg       $bg
-client.unfocused        $bg     $bg     $fg      $fg       $bg
-client.urgent           $bg     $bg     $fg      $fg       $bg
-client.placeholder      $bg     $bg     $fg      $fg       $bg
+client.focused          $bg     $bg     $fg      $bg       $bg
+client.focused_inactive $bg     $bg     $fg      $bg       $bg
+client.unfocused        $bg     $bg     $fg      $bg       $bg
+client.urgent           $bg     $bg     $fg      $bg       $bg
+client.placeholder      $bg     $bg     $fg      $bg       $bg
 client.background       $bg
 
 for_window [class="^.*"] border normal 0
@@ -101,4 +100,4 @@ gaps inner 16
 exec_always --no-startup-id picom &
 exec_always --no-startup-id wal -R -n &
 exec_always --no-startup-id hsetroot -solid "$bg" -brightness 0.05 &
-exec --no-startup-id ~/bin/lemon | lemonbar -f "Terminus-11" -B "$bg" -F "$fg" -o 1 -p &
+exec --no-startup-id ~/bin/lemon | lemonbar -g 1920x24 -f "Terminus-11" -B "$bg" -F "$fg" -o 1 -p | sh &
