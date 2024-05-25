@@ -1,0 +1,9 @@
+#!/bin/bash
+
+dt() {
+    date "+%T * %e/%m/%G"
+}
+
+while true; do
+    echo "%{c}$(dt)"
+done
