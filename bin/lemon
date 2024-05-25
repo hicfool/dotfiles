@@ -1,8 +1,6 @@
 #!/bin/sh
 
-dt() {
-    date "+%T * %e/%m/%G"
-}
+dt() { date "+%T * %e/%m/%G" }
 
 while true; do
     echo "%{c}$(dt)"
