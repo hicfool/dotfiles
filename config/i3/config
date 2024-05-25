@@ -4,7 +4,6 @@ set $refresh_i3status killall -SIGUSR1 i3status
 
 set_from_resource $bg i3wm.color0 #101010
 set_from_resource $fg i3wm.color7 #DDDDDD
-set_from_resource $c8 i3wm.color8 #404040
 
 bindsym $mod+Return exec --no-startup-id alacritty
 bindsym $mod+d exec --no-startup-id dmenu_run -l "24" -c -fn "Terminus-11" -nb "$bg" -nf "$fg" -sb "$fg" -sf "$bg"
@@ -86,12 +85,12 @@ mode "resize" {
 
 # Window colors
 # Class                 Border  Bg      Text     Indicator Child border
-client.focused          $c8     $c8     $fg      $fg       $c8
-client.focused_inactive $c8     $c8     $fg      $fg       $c8
-client.unfocused        $c8     $c8     $fg      $fg       $c8
-client.urgent           $c8     $c8     $fg      $fg       $c8
-client.placeholder      $c8     $c8     $fg      $fg       $c8
-client.background       $c8
+client.focused          $bg     $bg     $fg      $fg       $bg
+client.focused_inactive $bg     $bg     $fg      $fg       $bg
+client.unfocused        $bg     $bg     $fg      $fg       $bg
+client.urgent           $bg     $bg     $fg      $fg       $bg
+client.placeholder      $bg     $bg     $fg      $fg       $bg
+client.background       $bg
 
 for_window [class="^.*"] border normal 0
 for_window [class=".*"] title_format "%title"
