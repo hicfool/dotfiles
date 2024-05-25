@@ -69,7 +69,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
-bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+q exec "i3-nagbar -t warning -f 'pango:Terminus 11' -m 'Exit i3?' -B 'o/' 'i3-msg exit'"
 
 bindsym $mod+r mode "resize"
 
@@ -97,7 +97,7 @@ for_window [class="^.*"] border normal 0
 for_window [class=".*"] title_format "%title"
 title_align center
 
-gaps inner 32
+gaps inner 16
 
 exec_always --no-startup-id picom &
 exec_always --no-startup-id wal -R -n &
