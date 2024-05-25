@@ -1,9 +1,17 @@
 #!/bin/sh
 
 dt() {
-    date "+%T * %e/%m/%G"
+    echo "%{c}$(date "+| %T |") %{r}$(date "+%e/%m/%G")"
+}
+
+bye() {
+    echo "%{A:i3-msg exit:}[X]%{A}"
+}
+
+wrkspc() {
+    echo "[$(i3-msg -t get_workspaces | jq -r '.[] | select(.focused==true).name')]"
 }
 
 while true; do
-    echo "%{c}$(dt)"
+    echo " $(wrkspc) $(dt) | $(bye) "
 done
