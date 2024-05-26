@@ -1,6 +1,0 @@
-#!/bin/sh
-
-. "$HOME/.cache/wal/colors.sh"
-
-sleep 1
-lemonbar -B "$foreground//#" -g 1920x1
