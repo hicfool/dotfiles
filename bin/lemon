@@ -1,7 +1,5 @@
 #!/bin/sh
 
-. "$HOME/.cache/wal/colors.sh"
-
 wrkspc() {
     echo "[$(i3-msg -t get_workspaces | jq -r '.[] | select(.focused==true).name')]"
 }
