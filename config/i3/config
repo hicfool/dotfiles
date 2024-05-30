@@ -99,7 +99,6 @@ title_align center
 gaps inner 16
 
 exec_always --no-startup-id picom &
-exec_always --no-startup-id wal -R -n &
 exec_always --no-startup-id hsetroot -solid "$bg" -brightness 0.05 &
 exec        --no-startup-id ~/bin/lemon | lemonbar -g 1920x24 -f "Terminus-11" -B "$bg" -F "$fg" -o 1 -p | sh &
 exec        --no-startup-id sleep 1; lemonbar -B "$fg" -g 1920x1
