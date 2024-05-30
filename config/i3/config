@@ -93,6 +93,7 @@ client.background       $fg
 
 for_window [class="^.*"] border normal 1
 for_window [class=".*"] title_format "%title"
+for_window [class=".*"] floating enable
 title_align center
 
 gaps inner 16
