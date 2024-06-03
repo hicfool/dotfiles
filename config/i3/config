@@ -5,7 +5,7 @@ set $refresh_i3status killall -SIGUSR1 i3status
 set_from_resource $bg i3wm.color0 #101010
 set_from_resource $fg i3wm.color7 #DDDDDD
 
-bindsym $mod+Return exec --no-startup-id alacritty
+bindsym $mod+Return exec --no-startup-id xterm
 bindsym $mod+d exec --no-startup-id dmenu_run -b -l "8" -p "$" -fn "Terminus-11" -nb "$bg" -nf "$fg" -sb "$fg" -sf "$bg"
 
 floating_modifier $mod
