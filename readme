@@ -30,7 +30,6 @@ Stuff
       ```
         |
         '-- Just add these last 4 lines.
-* Get jq for the lemonbar script: `sudo pacman -S jq`
 
 Images
 ------
