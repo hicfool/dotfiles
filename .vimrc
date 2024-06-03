@@ -21,4 +21,4 @@ map <C-n> <esc>:set rnu!<CR>
 map <C-g> <esc>:Goyo<CR>
 map <C-l> <esc>:Limelight!!<CR>
 
-color wal
+color disco
