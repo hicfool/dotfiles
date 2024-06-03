@@ -1,7 +1,6 @@
 call plug#begin()
     Plug 'junegunn/goyo.vim'
     Plug 'junegunn/limelight.vim'
-    Plug 'dylanaraps/wal.vim'
 call plug#end()
 
 set nobackup nowritebackup
