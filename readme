@@ -6,12 +6,12 @@ What I use
 ----------
 * i3
 * dmenu
-* lemonbar-xft
-* alacritty
+* lemonbar
+* xterm
 * vim
 * picom
 * feh / hsetroot
-* terminus (11px)
+* terminus-11
 * base16-ashes
 
 Stuff
@@ -34,7 +34,6 @@ Stuff
       ```
         |
         '-- Just add these last 4 lines.
-* Xresources fix (pywal): `cp .cache/wal/colors.Xresources ~/; mv ~/colors.Xresources ~/.Xresources`
 * Get jq for the lemonbar script: `sudo pacman -S jq`
 
 Images
