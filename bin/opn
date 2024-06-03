@@ -1,0 +1,4 @@
+clear
+printf "\033[34mrun: \033[m"
+read what
+systemd-run --user --setenv DISPLAY $what
