@@ -6,7 +6,7 @@ set_from_resource $bg i3wm.color0 #101010
 set_from_resource $fg i3wm.color7 #DDDDDD
 
 bindsym $mod+Return exec --no-startup-id xterm
-bindsym $mod+d      exec --no-startup-id xterm -geometry 64x16 -e "~/bin/opn && exit"
+bindsym $mod+d      exec --no-startup-id xterm -geometry 64x16 -e "~/bin/opn"
 
 floating_modifier $mod
 
