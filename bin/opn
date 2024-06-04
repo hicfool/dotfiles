@@ -6,10 +6,10 @@ printf "| \033[33m'-''  ' '\033[34m |\n"
 printf "|,----------'\n"
 printf "|\n"
 printf "|\n"
-printf "'-> \033[33m" && read what
+printf "'-> \033[33m" && read pname
 printf "."            && sleep 0.02
 printf "\n.."         && sleep 0.02
 printf "\n..."        && sleep 0.02
 printf "\n.."         && sleep 0.02
 printf "\n.\n"        && sleep 0.02
-systemd-run --user --setenv DISPLAY $what
+systemd-run --user --setenv DISPLAY $pname
