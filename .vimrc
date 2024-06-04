@@ -14,8 +14,8 @@ set timeoutlen=1000 ttimeoutlen=0
 set hlsearch
 set guicursor=
 set number
+set t_Co=16
 syntax on
-color disco
 
 map <C-n> <esc>:set rnu!<CR>
 map <C-g> <esc>:Goyo<CR>
