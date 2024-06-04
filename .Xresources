@@ -63,3 +63,4 @@ xterm*rightScrollBar: true
 xterm*borderColor: base00
 xterm*borderWidth: 0
 xterm*internalBorder: 0
+xterm*allowTcapOps: false
