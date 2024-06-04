@@ -2,7 +2,7 @@
 [[ $- != *i* ]] && return
 
 # Add shell-option to ~/.inputrc to enable case-insensitive tab completion
-echo 'set completion-ignore-case On' >> ~/.inputrc
+echo 'set completion-ignore-case On' > ~/.inputrc
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
