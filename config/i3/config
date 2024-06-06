@@ -1,9 +1,9 @@
 set $mod Mod4
-font pango:Terminus 11
+font pango:Terminus 16
 set $refresh_i3status killall -SIGUSR1 i3status
 
 set_from_resource $bg i3wm.color0 #101010
-set_from_resource $fg i3wm.color7 #DDDDDD
+set_from_resource $fg i3wm.color6 #DDDDDD
 
 bindsym $mod+Return exec --no-startup-id xterm
 bindsym $mod+d      exec --no-startup-id xterm -geometry 64x16 -e "~/bin/opn"
@@ -84,19 +84,19 @@ mode "resize" {
 
 # Window colors
 # Class                 Border  Bg      Text     Indicator Child border
-client.focused          $fg     $bg     $fg      $fg       $fg
+client.focused          $fg     $fg     $fg      $fg       $fg
 client.focused_inactive $fg     $bg     $fg      $fg       $fg
 client.unfocused        $fg     $bg     $fg      $fg       $fg
-client.urgent           $fg     $bg     $fg      $fg       $fg
-client.placeholder      $fg     $bg     $fg      $fg       $fg
+client.urgent           $fg     $fg     $fg      $fg       $fg
+client.placeholder      $fg     $fg     $fg      $fg       $fg
 client.background       $fg
 
 for_window [class="^.*"] border normal 1
-for_window [class=".*"] title_format "%title"
+for_window [class=".*"] title_format " "
 for_window [class=".*"] floating enable
 title_align center
 
 gaps inner 16
 
 exec_always --no-startup-id picom &
-exec_always --no-startup-id hsetroot -solid "$bg" -brightness 0.05 &
+exec_always --no-startup-id hsetroot -solid "$bg" &
