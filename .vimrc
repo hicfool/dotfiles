@@ -1,4 +1,5 @@
 call plug#begin()
+    Plug 'sheerun/vim-polyglot'
     Plug 'junegunn/goyo.vim'
     Plug 'junegunn/limelight.vim'
 call plug#end()
