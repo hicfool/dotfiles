@@ -96,7 +96,8 @@ for_window [class=".*"] title_format " "
 for_window [class=".*"] floating enable
 title_align center
 
-gaps inner 16
+gaps inner 32
 
 exec_always --no-startup-id picom &
 exec_always --no-startup-id hsetroot -solid "$bg" &
+exec_always --no-startup-id feh --bg-scale ~/pics/wall.png &
