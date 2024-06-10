@@ -62,6 +62,7 @@ xterm*scrollBar: true
 xterm*rightScrollBar: true
 xterm*borderColor: base00
 xterm*borderWidth: 0
-xterm*internalBorder: 32
+xterm*internalBorder: 16
 xterm*allowTcapOps: false
 XTerm.vt100.scrollbar.foreground: base01
+XTerm.vt100.scrollbar.width: 16
