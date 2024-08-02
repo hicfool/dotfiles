@@ -1,16 +1,12 @@
-############
-# dotfiles #
-############
-
-What I use
-----------
-* i3
-* xterm
+Stuff
+-----
+* bspwm + sxhkd
+* alacritty
 * vim
 * terminus
 * base16-ashes
 
-Stuff
+Notes
 -----
 * Set keyboard-layout: `loadkeys pt-latin1; localectl set-x11-keymap pt; setxkbmap -layout pt`
 * Replace Mac media keys with Fn keys: `echo 0 | sudo tee /sys/module/hid_apple/parameters/fnmode`
@@ -30,8 +26,3 @@ Stuff
       ```
         |
         '-- Just add these last 4 lines.
-
-Images
-------
-* https://i.imgur.com/Cr0vXtd.png
-* https://i.imgur.com/kjTZXp0.png
