@@ -1,0 +1,79 @@
+###################
+# K E Y B I N D S #
+###################
+
+# Terminal
+super + Return
+	alacritty
+
+# Dmenu
+super + d
+	~/bin/dmen
+
+# Reload Sxhkd
+super + Escape
+	pkill -USR1 -x sxhkd
+
+#########
+# BSPWM #
+#########
+
+# Quit/restart BSPWM
+super + shift + {q,r}
+	bspc {quit,wm -r}
+
+# Close & kill
+super + q
+	bspc node -{c,k}
+
+# Switch between tiled & monocle
+super + m
+	bspc desktop -l next
+
+# Send the newest marked node to the newest preselected node
+super + y
+	bspc node newest.marked.local -n newest.!automatic.local
+
+# Swap the current node and the biggest window
+super + g
+	bspc node -s biggest.window
+
+################
+# States/flags #
+################
+
+# Window states
+super + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# Node flags
+super + ctrl + {m,x,y,z}
+	bspc node -g {marked,locked,sticky,private}
+
+# Focus/swap
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+# Cycle focus
+super + {_,shift + }c
+	bspc node -f {next,prev}.local.!hidden.window
+
+# Focus or send to specified desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+###############
+# Move/resize #
+###############
+
+# Resize window outwards
+super + alt + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# Resize window inwards
+super + alt + shift + {h,j,k,l}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+# Move floating window
+super + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
