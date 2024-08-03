@@ -3,6 +3,7 @@
 . "${HOME}/.cache/wal/colors.sh"
 
 pgrep -x sxhkd > /dev/null || sxhkd &
+xsetroot -cursor_name left_ptr &
 picom &
 hsetroot -solid $background &
 feh --bg-scale ~/Pictures/Wall2.png
