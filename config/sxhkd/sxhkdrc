@@ -8,7 +8,7 @@ super + Return
 
 # Dmenu
 super + d
-	~/bin/dmen
+	~/bin/bee
 
 # Reload Sxhkd
 super + Escape
