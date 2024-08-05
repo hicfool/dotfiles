@@ -1,11 +1,3 @@
-Stuff
------
-* bspwm + sxhkd + bemenu
-* alacritty
-* vim
-* terminus
-* base16-ashes
-
 Notes
 -----
 * Keyboard-layout: `loadkeys pt-latin1; localectl set-x11-keymap pt; setxkbmap -layout pt`
