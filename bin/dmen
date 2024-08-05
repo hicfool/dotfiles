@@ -1,3 +1,0 @@
-. "${HOME}/.cache/wal/colors.sh"
-
-dmenu_run -nb "$background" -nf "$color6" -sb "$color6" -sf "$background" -fn "Terminus-11" -p "$"
