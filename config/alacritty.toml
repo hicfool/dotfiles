@@ -1,0 +1,14 @@
+[window]
+dimensions = { columns = 64, lines = 24 }
+padding = { x = 32, y = 32 }
+
+[selection]
+save_to_clipboard = true
+
+[cursor]
+style = { shape = "Block", blinking = "Always" }
+blink_interval = 500
+
+[font]
+size = 10
+normal = { family = "Noto Sans Mono" }
