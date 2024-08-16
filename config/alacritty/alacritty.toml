@@ -1,6 +1,6 @@
 [window]
 dimensions = { columns = 64, lines = 24 }
-padding = { x = 0, y = 0 }
+padding = { x = 32, y = 32 }
 
 [selection]
 save_to_clipboard = true
@@ -11,4 +11,4 @@ blink_interval = 500
 
 [font]
 size = 11
-normal = { family = "Terminus" }
+normal = { family = "Terminus", style = "Regular" }
