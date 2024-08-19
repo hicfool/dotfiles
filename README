@@ -17,9 +17,9 @@ Notes
                 Option "SuspendTime" "0"
                 Option "OffTime" "0"
         EndSection
-        (...)
-        |
-        '-- Add the last 4 'Option' lines.
+        (...)   |
+                |
+                '-- Add the last 4 'Option' lines.
 
 Image
 -----
