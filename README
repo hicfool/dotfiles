@@ -4,19 +4,21 @@ Notes
 - Missing text characters/emojis: `sudo pacman -S noto-fonts noto-fonts-extra noto-fonts-cjk noto-fonts-emoji`
 - Prevent monitor from sleeping:
     - Edit `/etc/X11/xorg.conf`:
-      ```
-      Section "ServerLayout"
-      Identifier     "Layout0"
-      Screen      0  "Screen0"
-      InputDevice    "Keyboard0" "CoreKeyboard"
-      InputDevice    "Evdev Mouse" "CorePointer"
+        ```
+        ...
+        Section "ServerLayout"
+        Identifier     "Layout0"
+        Screen      0  "Screen0"
+        InputDevice    "Keyboard0" "CoreKeyboard"
+        InputDevice    "Evdev Mouse" "CorePointer"
         Option "BlankTime" "0"
         Option "StandbyTime" "0"
         Option "SuspendTime" "0"
         Option "OffTime" "0"
-      ```
+        ...
+        ```
         |
-        '-- Add these last 4 lines.
+        '-- Add the last 4 'Option' lines.
 
 Image
 -----
