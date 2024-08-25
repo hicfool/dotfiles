@@ -6,7 +6,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 picom &
 hsetroot -solid $background &
 xsetroot -cursor_name left_ptr &
-~/bin/bar &
+killall polybar; wait 0.1; polybar &
 
 bspc config normal_border_color "$color8"
 bspc config active_border_color "$color6"
