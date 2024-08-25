@@ -10,5 +10,5 @@ style = { shape = "Block", blinking = "Always" }
 blink_interval = 500
 
 [font]
-size = 8
+size = 11
 normal = { family = "Terminus", style = "Regular" }
