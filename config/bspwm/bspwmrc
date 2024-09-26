@@ -22,4 +22,5 @@ bspc config split_ratio          0.5
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
+bspc rule -a '*' state=floating
 bspc rule -a Neko manage=off
