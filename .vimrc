@@ -1,7 +1,7 @@
 call plug#begin()
     Plug 'sheerun/vim-polyglot'
-    Plug 'junegunn/goyo.vim'
-    Plug 'junegunn/limelight.vim'
+	Plug 'junegunn/goyo.vim'
+	Plug 'junegunn/limelight.vim'
 call plug#end()
 
 colorscheme default
@@ -16,6 +16,9 @@ set expandtab
 set mouse=a
 set timeoutlen=1000 ttimeoutlen=0
 set hlsearch
+set rnu
+set nu
+set ruler
 set guicursor=n-v-c-i:block-Cursor
 
 map <C-n> <esc>:set nu!<CR>
