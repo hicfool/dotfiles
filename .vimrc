@@ -1,10 +1,11 @@
 call plug#begin()
+    Plug 'dylanaraps/wal.vim'
     Plug 'sheerun/vim-polyglot'
 	Plug 'junegunn/goyo.vim'
 	Plug 'junegunn/limelight.vim'
 call plug#end()
 
-colorscheme default
+colorscheme wal
 syntax on
 
 set nobackup nowritebackup
@@ -20,10 +21,6 @@ set nu
 set numberwidth=1
 set ruler
 set guicursor=n-v-c-i:block-Cursor
-set cursorline
-hi LineNr ctermfg=DarkGrey
-hi CursorLineNr ctermbg=Black ctermfg=Red
-hi CursorLine ctermbg=Black
 
 map <C-n> <esc>:set nu!<CR>
 map <C-m> <esc>:set rnu!<CR>
