@@ -1,5 +1,9 @@
-Notes
------
+# Dotfiles
+![](https://raw.githubusercontent.com/hicfool/dotfiles/main/image0.png)
+![](https://raw.githubusercontent.com/hicfool/dotfiles/main/image1.png)
+
+### Some Notes
+```
 - Keyboard-layout: `loadkeys pt-latin1; localectl set-x11-keymap pt; setxkbmap -layout pt`
 - Missing text characters/emojis: `sudo pacman -S noto-fonts noto-fonts-extra noto-fonts-cjk noto-fonts-emoji`
 - Prevent monitor from sleeping:
@@ -20,8 +24,4 @@ Notes
         (...)   |
                 |
                 '-- Add the last 4 'Option' lines.
-
-Image
------
-https://raw.githubusercontent.com/hicfool/dotfiles/main/image0.png
-https://raw.githubusercontent.com/hicfool/dotfiles/main/image1.png
+```
