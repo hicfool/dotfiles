@@ -1,3 +1,3 @@
 . "${HOME}/.cache/wal/colors.sh"
 
-bemenu-run --tb "$background" --tf "$color6" --fb "$background" --ff "$color6" --hb "$color6" --hf "$background" --nb "$background" --nf "$color8" --sb "$color6" --sf "$background" --fbb "$background" --fbf "$color6" --ab "$background" --cb "$background" --cf "$color6" --af "$color8" --bdr "$color6" --scb "$background" --scf "$color6" -B 1 -R 5 -M 728 -H 8 -l 24 --fixed-height --fn "Terminus Regular 12" -s -c -p "" --scrollbar always
+bemenu-run --tb "$background" --tf "$color7" --fb "$background" --ff "$color7" --hb "$color7" --hf "$background" --nb "$background" --nf "$color8" --sb "$color7" --sf "$background" --fbb "$background" --fbf "$color7" --ab "$background" --cb "$background" --cf "$color7" --af "$color8" --bdr "$color7" --scb "$background" --scf "$color7" -B 2 -R 0 -M 728 -H 8 -l 24 --fixed-height --fn "Terminus Bold 12" -s -c -p "" --scrollbar always
