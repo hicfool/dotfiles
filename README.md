@@ -4,7 +4,7 @@
 ![](https://raw.githubusercontent.com/hicfool/dotfiles/main/image0.png)
 ![](https://raw.githubusercontent.com/hicfool/dotfiles/main/image1.png)
 
-### Some Notes
+### Notes
 ```
 - Keyboard-layout: `loadkeys pt-latin1; localectl set-x11-keymap pt; setxkbmap -layout pt`
 - Missing text characters/emojis: `sudo pacman -S noto-fonts noto-fonts-extra noto-fonts-cjk noto-fonts-emoji`
