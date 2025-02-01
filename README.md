@@ -1,4 +1,5 @@
 <h1 align="center">Dotfiles</h1>
+<p align="center"> My current Linux setup + some notes for personal use. </p>
 
 ![](https://raw.githubusercontent.com/hicfool/dotfiles/main/image0.png)
 ![](https://raw.githubusercontent.com/hicfool/dotfiles/main/image1.png)
