@@ -4,7 +4,8 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 picom &
-hsetroot -solid $color0 &
+# hsetroot -solid $color0 &
+feh --bg-tile ~/Pictures/BG.png
 xsetroot -cursor_name left_ptr &
 killall polybar; wait 0.1; polybar &
 
