@@ -1,8 +1,7 @@
 <h1 align="center">Dotfiles</h1>
 <p align="center"> My current Linux setup + some notes for personal use. </p>
 
-![](https://raw.githubusercontent.com/hicfool/dotfiles/main/Pictures/image0.png)
-![](https://raw.githubusercontent.com/hicfool/dotfiles/main/Pictures/image1.png)
+![](https://raw.githubusercontent.com/hicfool/dotfiles/main/Pictures/image.png)
 
 ### Notes
 ```
