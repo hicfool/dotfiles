@@ -25,4 +25,6 @@
         (...)   |
                 |
                 '-- Add the last 4 'Option' lines.
+- FIX Proton audio crackling: "install realtime-privileges (arch) and add your user to group realtime"
+- Disable NetworkManager and instead use systemd-networkd/resolved
 ```
