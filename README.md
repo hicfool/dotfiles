@@ -25,6 +25,6 @@
         (...)   |
                 |
                 '-- Add the last 4 'Option' lines.
-- FIX Proton audio crackling: "install realtime-privileges (arch) and add your user to group realtime"
+- FIX Proton audio crackling: `sudo pacman -S realtime-privileges` and then `sudo gpasswd -a $USER realtime`
 - Disable NetworkManager and instead use systemd-networkd/resolved
 ```
