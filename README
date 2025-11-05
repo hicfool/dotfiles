@@ -1,4 +1,3 @@
-```
 # Notes
 - Keyboard-layout: `loadkeys pt-latin1; localectl set-x11-keymap pt; setxkbmap -layout pt`
 - Missing text characters/emojis: `sudo pacman -S noto-fonts noto-fonts-extra noto-fonts-cjk noto-fonts-emoji`
@@ -22,4 +21,3 @@
                 '-- Add the last 4 'Option' lines.
 - FIX Proton audio crackling: `sudo pacman -S realtime-privileges` and then `sudo gpasswd -a $USER realtime`
 - Disable NetworkManager and instead use systemd-networkd/resolved
-```
