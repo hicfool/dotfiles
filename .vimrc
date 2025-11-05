@@ -19,13 +19,14 @@ set mouse=a
 set timeoutlen=1000 ttimeoutlen=0
 set hlsearch
 set numberwidth=1
-set noruler
+set ruler
+set nu
 set guicursor=n-v-c-i:block-Cursor
 set cursorline
 highlight clear CursorLine
 highlight clear CursorLineNr
 highlight CursorLineNr ctermfg=green ctermbg=black
 
-nnoremap <C-t> :NERDTreeToggle<CR>
-map <C-g> :Goyo<CR>
-map <C-l> :Limelight!!<CR>
+nnoremap <C-t> <esc>: NERDTreeToggle<CR>
+map <C-g> <esc>: Goyo<CR>
+map <C-l> <esc>: Limelight!!<CR>
