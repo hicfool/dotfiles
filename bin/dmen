@@ -1,3 +1,3 @@
 #!/bin/sh
 . "${HOME}/.cache/wal/colors.sh"
-dmenu_run -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color0" -fn "Terminus-11" -b -p ">"
+dmenu_run -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15" -fn "Terminus-11" -b -p ">"
