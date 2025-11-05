@@ -6,7 +6,7 @@ echo 'set completion-ignore-case On' > ~/.inputrc
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-PS1='\[\e[m\][\[\e[0;36m\]\u@\h \[\e[0;32m\]\w\[\e[m\]]\[\e[0;36m\]$\[\e[m\] '
+PS1='> '
 # echo -e -n "\x1b[\x34 q"
 
 # Import colorscheme from 'wal' asynchronously
@@ -23,3 +23,6 @@ source ~/.cache/wal/colors-tty.sh
 
 # Fix Java 8
 export _JAVA_AWT_WM_NONREPARENTING=1
+
+# Zathura
+export PATH="/home/hicfool/.local/bin:$PATH"

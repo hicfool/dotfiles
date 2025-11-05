@@ -1,0 +1,6 @@
+URxvt.font: xft:Terminus:size=11:style=Regular
+URxvt*internalBorder: 16
+URxvt*scrollBar: true
+URxvt*scrollBar_right: true
+URxvt*scrollColor: #404040
+URxvt*scrollstyle: xterm
