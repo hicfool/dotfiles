@@ -1,4 +1,5 @@
 URxvt.font: xft:Terminus:size=11:style=Regular
+URxvt.boldFont:
 URxvt*internalBorder: 16
 URxvt*scrollBar: true
 URxvt*scrollBar_right: true
