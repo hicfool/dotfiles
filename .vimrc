@@ -1,11 +1,9 @@
 call plug#begin()
-    Plug 'sheerun/vim-polyglot'
     Plug 'preservim/nerdtree'
 call plug#end()
 
-set t_Co=16
 syntax on
-
+set t_Co=16
 set nobackup nowritebackup
 set noswapfile
 set tabstop=4
@@ -19,11 +17,12 @@ set numberwidth=1
 set ruler
 set guicursor=n-v-c-i:block-Cursor
 set cursorline
-highlight clear CursorLine
-highlight clear CursorLineNr
-highlight LineNr ctermfg=darkgray ctermbg=black
-highlight CursorLine cterm=none
-highlight CursorLineNr ctermfg=white ctermbg=black
-highlight EndOfBuffer ctermfg=black ctermbg=black
+let loaded_matchparen = 1
+hi clear CursorLine
+hi clear CursorLineNr
+hi LineNr ctermfg=darkgray ctermbg=black
+hi CursorLine cterm=none
+hi CursorLineNr ctermfg=white ctermbg=black
+hi EndOfBuffer ctermfg=black ctermbg=black
 
 nnoremap <C-t> <esc>: NERDTreeToggle<CR>
