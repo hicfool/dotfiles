@@ -24,5 +24,6 @@ highlight clear CursorLineNr
 highlight LineNr ctermfg=darkgray ctermbg=black
 highlight CursorLine cterm=none
 highlight CursorLineNr ctermfg=white ctermbg=black
+highlight EndOfBuffer ctermfg=black ctermbg=black
 
 nnoremap <C-t> <esc>: NERDTreeToggle<CR>
