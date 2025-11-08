@@ -19,7 +19,6 @@ set numberwidth=1
 set ruler
 set guicursor=n-v-c-i:block-Cursor
 set cursorline
-let loaded_matchparen = 1
 hi clear CursorLine
 hi clear CursorLineNr
 hi LineNr ctermfg=darkgray ctermbg=black
