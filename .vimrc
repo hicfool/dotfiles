@@ -2,7 +2,9 @@ call plug#begin()
     Plug 'preservim/nerdtree'
 call plug#end()
 
-syntax on
+nnoremap <C-t> <esc>: NERDTreeToggle<CR>
+
+syntax off
 set t_Co=16
 set nobackup nowritebackup
 set noswapfile
@@ -24,5 +26,3 @@ hi LineNr ctermfg=darkgray ctermbg=black
 hi CursorLine cterm=none
 hi CursorLineNr ctermfg=white ctermbg=black
 hi EndOfBuffer ctermfg=black ctermbg=black
-
-nnoremap <C-t> <esc>: NERDTreeToggle<CR>

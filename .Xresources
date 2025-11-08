@@ -1,4 +1,4 @@
-#define base00 #101010
+#define base00 #537894
 #define base01 #ffffff
 #define base02 #ffffff
 #define base03 #ffffff
@@ -45,7 +45,8 @@ xterm*faceSize:                   11
 xterm*cursorTheme:                Adwaita
 xterm*cursorBlink:                true
 xterm*geometry:                   50x25
-xterm*scrollBar:                  false
+xterm*scrollBar:                  true
+xterm*rightScrollBar:             true
 xterm*borderColor:                base00
 xterm*borderWidth:                0
 xterm*internalBorder:             0
