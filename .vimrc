@@ -1,9 +1,3 @@
-call plug#begin()
-    Plug 'preservim/nerdtree'
-call plug#end()
-
-nnoremap <C-t> <esc>: NERDTreeToggle<CR>
-
 syntax off
 set t_Co=16
 set nobackup nowritebackup
