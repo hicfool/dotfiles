@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$HOME/bin/colors"
 
-dmenu_run -nb $color0 -nf $color1 -sb $color1 -sf $color0 -fn "Terminus-11" -b -p ">"
+dmenu_run -nb $color0 -nf $color1 -sb $color1 -sf $color0 -fn "Terminus:style=Regular:size=11" -b -p ">"
