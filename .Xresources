@@ -39,9 +39,8 @@
 *.color14:      base0F
 *.color15:      base07
 
-xterm*faceName:                   Terminus
+xterm*faceName:                   Terminus:style=Regular:size=11
 xterm*allowBoldFonts:             false
-xterm*faceSize:                   11
 xterm*scaleHeight:                1
 xterm*cursorTheme:                Adwaita
 xterm*cursorBlink:                true
@@ -53,6 +52,11 @@ xterm*borderWidth:                0
 xterm*internalBorder:             16
 xterm*allowTcapOps:               false
 xterm.vt100.scrollbar.foreground: base02
+xclock*face:                      Terminus:style=Regular:size=11
+xclock*render:                    false
 xclock*background:                base00
 xclock*foreground:                base01
 xclock*hands:                     base01
+xclock*majorColor:                base01
+xclock*minorColor:                base01
+xclock*highlight:                 base01
