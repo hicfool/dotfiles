@@ -2,7 +2,7 @@
 # Notes #
 #########
 
-Keyboard-layout
+Keyboard layout
 ***************
 loadkeys pt-latin1; localectl set-x11-keymap pt; setxkbmap -layout pt
 
@@ -33,6 +33,6 @@ Proton audio crackling
 **********************
 sudo pacman -S realtime-privileges; sudo gpasswd -a $USER realtime
 
-Pipewire / PulseAudio
+Pipewire & PulseAudio
 *********************
 sudo pacman -S pipewire-pulse; systemctl --user enable pipewire-pulse.socket; systemctl --user start pipewire-pulse.socket
