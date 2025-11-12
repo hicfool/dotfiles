@@ -1,4 +1,4 @@
-#define base00 #537894
+#define base00 #37353e
 #define base01 #ffffff
 #define base02 #ffffff
 #define base03 #ffffff
@@ -42,10 +42,11 @@
 xterm*faceName:                   Terminus
 xterm*allowBoldFonts:             false
 xterm*faceSize:                   11
+xterm*scaleHeight:                1
 xterm*cursorTheme:                Adwaita
 xterm*cursorBlink:                true
 xterm*geometry:                   50x25
-xterm*scrollBar:                  true
+xterm*scrollBar:                  false
 xterm*rightScrollBar:             true
 xterm*borderColor:                base00
 xterm*borderWidth:                0
