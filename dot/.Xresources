@@ -1,45 +1,32 @@
+#define font00 Terminus:style=Regular:size=11
 #define base00 #37353e
 #define base01 #ffffff
-#define base02 #ffffff
-#define base03 #ffffff
-#define base04 #ffffff
-#define base05 #ffffff
-#define base06 #ffffff
-#define base07 #ffffff
-#define base08 #ffffff
-#define base09 #ffffff
-#define base0A #ffffff
-#define base0B #ffffff
-#define base0C #ffffff
-#define base0D #ffffff
-#define base0E #ffffff
-#define base0F #ffffff
 
-*.foreground:   base05
+*.foreground:   base01
 #ifdef background_opacity
 *.background:   [background_opacity]base00
 #else
 *.background:   base00
 #endif
-*.cursorColor:  base05
+*.cursorColor:  base01
 *.color0:       base00
-*.color1:       base08
-*.color2:       base0B
-*.color3:       base0A
-*.color4:       base0D
-*.color5:       base0E
-*.color6:       base0C
-*.color7:       base05
-*.color8:       base03
-*.color9:       base09
+*.color1:       base01
+*.color2:       base01
+*.color3:       base01
+*.color4:       base01
+*.color5:       base01
+*.color6:       base01
+*.color7:       base01
+*.color8:       base01
+*.color9:       base01
 *.color10:      base01
-*.color11:      base02
-*.color12:      base04
-*.color13:      base06
-*.color14:      base0F
-*.color15:      base07
+*.color11:      base01
+*.color12:      base01
+*.color13:      base01
+*.color14:      base01
+*.color15:      base01
 
-xterm*faceName:                   Terminus:style=Regular:size=11
+xterm*faceName:                   font00
 xterm*allowBoldFonts:             false
 xterm*scaleHeight:                1
 xterm*cursorTheme:                Adwaita
@@ -49,10 +36,11 @@ xterm*scrollBar:                  false
 xterm*rightScrollBar:             true
 xterm*borderColor:                base00
 xterm*borderWidth:                0
-xterm*internalBorder:             16
+xterm*internalBorder:             8
 xterm*allowTcapOps:               false
 xterm.vt100.scrollbar.foreground: base02
-xclock*face:                      Terminus:style=Regular:size=11
+
+xclock*face:                      font00
 xclock*render:                    false
 xclock*background:                base00
 xclock*foreground:                base01
@@ -60,3 +48,7 @@ xclock*hands:                     base01
 xclock*majorColor:                base01
 xclock*minorColor:                base01
 xclock*highlight:                 base01
+
+Nsxiv.window.background:          base00
+Nsxiv.window.foreground:          base01
+Nsxiv.bar.font:                   font00 
