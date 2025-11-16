@@ -1,0 +1,7 @@
+[Default Applications]
+video/mp4=ffplay.desktop
+video/x-matroska=ffplay.desktop
+image/jpeg=nsxiv.desktop
+image/png=nsxiv.desktop
+image/gif=nsxiv.desktop
+image/webp=nsxiv.desktop
