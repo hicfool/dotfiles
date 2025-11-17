@@ -1,32 +1,28 @@
-#define font00 Terminus:style=Regular:size=11
-#define base00 #37353e
-#define base01 #ffffff
-
-*.foreground:   base01
+*.foreground:   $C1
 #ifdef background_opacity
-*.background:   [background_opacity]base00
+*.background:   [background_opacity]$C0
 #else
-*.background:   base00
+*.background:   $C0
 #endif
-*.cursorColor:  base01
-*.color0:       base00
-*.color1:       base01
-*.color2:       base01
-*.color3:       base01
-*.color4:       base01
-*.color5:       base01
-*.color6:       base01
-*.color7:       base01
-*.color8:       base01
-*.color9:       base01
-*.color10:      base01
-*.color11:      base01
-*.color12:      base01
-*.color13:      base01
-*.color14:      base01
-*.color15:      base01
+*.cursorColor:  $C1
+*.color0:       $C0
+*.color1:       $C1
+*.color2:       $C1
+*.color3:       $C1
+*.color4:       $C1
+*.color5:       $C1
+*.color6:       $C1
+*.color7:       $C1
+*.color8:       $C1
+*.color9:       $C1
+*.color10:      $C1
+*.color11:      $C1
+*.color12:      $C1
+*.color13:      $C1
+*.color14:      $C1
+*.color15:      $C1
 
-xterm*faceName:                   font00
+xterm*faceName:                   $FN
 xterm*allowBoldFonts:             false
 xterm*scaleHeight:                1
 xterm*cursorTheme:                Adwaita
@@ -34,21 +30,21 @@ xterm*cursorBlink:                true
 xterm*geometry:                   50x25
 xterm*scrollBar:                  false
 xterm*rightScrollBar:             true
-xterm*borderColor:                base00
+xterm*borderColor:                $C0
 xterm*borderWidth:                0
 xterm*internalBorder:             8
 xterm*allowTcapOps:               false
-xterm.vt100.scrollbar.foreground: base02
+xterm.vt100.scrollbar.foreground: $C1
 
-xclock*face:                      font00
+xclock*face:                      $FN
 xclock*render:                    false
-xclock*background:                base00
-xclock*foreground:                base01
-xclock*hands:                     base01
-xclock*majorColor:                base01
-xclock*minorColor:                base01
-xclock*highlight:                 base01
+xclock*background:                $C0
+xclock*foreground:                $C1
+xclock*hands:                     $C1
+xclock*majorColor:                $C1
+xclock*minorColor:                $C1
+xclock*highlight:                 $C1
 
-Nsxiv.window.background:          base00
-Nsxiv.window.foreground:          base01
-Nsxiv.bar.font:                   font00 
+Nsxiv.window.background:          $C0
+Nsxiv.window.foreground:          $C1
+Nsxiv.bar.font:                   $FN 
