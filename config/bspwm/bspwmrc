@@ -1,4 +1,7 @@
 #! /bin/sh
+. ~/.theme
+envsubst < ~/.Xresources > /tmp/Xresources &
+xrdb /tmp/Xresources &
 killall sxhkd; sxhkd &
 picom &
 hsetroot -solid $C0 &
