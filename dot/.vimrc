@@ -6,6 +6,7 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
+set autoindent
 set mouse=a
 set timeoutlen=1000 ttimeoutlen=0
 set hlsearch
