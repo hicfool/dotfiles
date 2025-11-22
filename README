@@ -1,17 +1,19 @@
-#########
-# Notes #
-#########
-
-Keyboard layout
-***************
+.-------.
+| Notes |
+'-------'
+.-----------------.
+| Keyboard layout |
+'-----------------'
 loadkeys pt-latin1; localectl set-x11-keymap pt; setxkbmap -layout pt
 
-Missing text characters/emojis
-******************************
+.--------------------------------.
+| Missing text characters/emojis |
+'--------------------------------'
 sudo pacman -S noto-fonts noto-fonts-extra noto-fonts-cjk noto-fonts-emoji
 
-Prevent monitor from sleeping
-*****************************
+.-------------------------------.
+| Prevent monitor from sleeping |
+'-------------------------------'
 Edit /etc/X11/xorg.conf:
     (...)
     Section "ServerLayout"
@@ -29,10 +31,12 @@ Edit /etc/X11/xorg.conf:
     (...)
 Add the last 4 "Option" lines.
 
-Proton audio crackling
-**********************
+.------------------------.
+| Proton audio crackling |
+'------------------------'
 sudo pacman -S realtime-privileges; sudo gpasswd -a $USER realtime
 
-PipeWire & PulseAudio
-*********************
+.-----------------------.
+| PipeWire & PulseAudio |
+'-----------------------'
 sudo pacman -S pipewire-pulse; systemctl --user enable pipewire-pulse.socket; systemctl --user start pipewire-pulse.socket
