@@ -1,0 +1,21 @@
+#!/bin/sh
+
+getclock() {
+	date +"%H:%M"
+}
+
+getdate() {
+	date +"%Y-%m-%d"
+}
+
+gettemp() {
+    sensors | grep "Tctl:" | awk '{print $2}'
+}
+
+while true
+do
+    echo -e "%{c}[$(getclock)] [$(getdate)] ::::::::::::::::::::: [$(gettemp)]"
+	sleep 5
+done |
+
+lemonbar -f "$FN" -F "$C1" -g 1920+0+32
