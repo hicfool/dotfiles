@@ -5,17 +5,21 @@ getclock() {
 }
 
 getdate() {
-	date +"%Y-%m-%d"
+	date +"%Y/%m/%d"
 }
 
 gettemp() {
     sensors | grep "Tctl:" | awk '{print $2}'
 }
 
+getnet() {
+    networkctl | grep "2" | awk '{print $4}'
+}
+
 while true
 do
-    echo -e "%{c}[$(getclock)] [$(getdate)] ::::::::::::::::::::: [$(gettemp)]"
+    echo -e "%{c}[$(getclock)] [$(getdate)] :::::::::::::::::::: [$(getnet)] [$(gettemp)]"
 	sleep 5
 done |
 
-lemonbar -f "$FN" -F "$C1" -g 1920+0+32
+lemonbar -f "$FN" -F "$C1" -g 1920+0+46
