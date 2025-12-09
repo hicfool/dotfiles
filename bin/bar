@@ -18,7 +18,7 @@ getnet() {
 
 while true
 do
-    echo -e "%{c}[$(getclock)] [$(getdate)] :::::::::::::::::::: [$(getnet)] [$(gettemp)]"
+    echo -e "%{c}[$(getclock)] [$(getdate)]                               [$(getnet)] [$(gettemp)]"
 	sleep 5
 done |
 
