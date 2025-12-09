@@ -1,4 +1,4 @@
-export FN="Terminus:style=Regular:size=11"
-export C0="#37353e"
-export C1="#f5ecd5"
-export C2="#808080"
+export FN="Iosevka:style=Regular:size=11"
+export C0="#303030"
+export C1="#ffffff"
+export C2="#606060"
