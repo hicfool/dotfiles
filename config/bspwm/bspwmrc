@@ -5,7 +5,7 @@ xrdb /tmp/Xresources &
 killall sxhkd; sxhkd &
 xsetroot -solid $C0 &
 xsetroot -cursor_name left_ptr &
-pkill -9 lemonbar; ~/Bin/bar &
+pkill -9 lemonbar; ~/bin/bar &
 sleep 0.15; xdo above -t $(xdo id -n root) $(xdo id -n lemonbar) &
 
 bspc config active_border_color     $C1
