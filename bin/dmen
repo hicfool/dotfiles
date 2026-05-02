@@ -1,2 +1,2 @@
 #!/bin/sh
-dmenu_run -nb $C0 -nf $C1 -sb $C1 -sf $C0 -fn $FN -b -p ">"
+dmenu_run -nb $C0 -nf $C2 -sb $C0 -sf $C1 -fn $FN -l 64

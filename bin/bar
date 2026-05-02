@@ -22,4 +22,4 @@ do
 	sleep 5
 done |
 
-lemonbar -f "$FN" -F "$C1" -g 1920+0+46
+lemonbar -f "$FN" -B "$C0" -F "$C2" -g 1920+0+0
