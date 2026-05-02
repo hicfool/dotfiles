@@ -1,4 +1,4 @@
-syntax off
+syntax on
 set t_Co=16
 set nobackup nowritebackup
 set noswapfile

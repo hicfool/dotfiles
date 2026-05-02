@@ -1,8 +1,5 @@
-*.foreground:   $C1
-#ifdef background_opacity
-*.background:   [background_opacity]$C0
-#else
 *.background:   $C0
+*.foreground:   $C1
 #endif
 *.cursorColor:  $C1
 *.color0:       $C0
@@ -13,17 +10,17 @@
 *.color5:       $C1
 *.color6:       $C1
 *.color7:       $C1
-*.color8:       $C1
-*.color9:       $C1
-*.color10:      $C1
-*.color11:      $C1
-*.color12:      $C1
-*.color13:      $C1
-*.color14:      $C1
-*.color15:      $C1
+*.color8:       $C2
+*.color9:       $C2
+*.color10:      $C2
+*.color11:      $C2
+*.color12:      $C2
+*.color13:      $C2
+*.color14:      $C2
+*.color15:      $C2
 
 xterm*faceName:                   $FN
-xterm*allowBoldFonts:             false
+xterm*allowBoldFonts:             true
 xterm*scaleHeight:                1
 xterm*cursorTheme:                Adwaita
 xterm*cursorBlink:                true
