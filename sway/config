@@ -32,10 +32,10 @@ bindsym $mod+$down focus down
 bindsym $mod+$up focus up
 bindsym $mod+$right focus right
 
-bindsym $mod+Shift+$left move left
-bindsym $mod+Shift+$down move down
-bindsym $mod+Shift+$up move up
-bindsym $mod+Shift+$right move right
+bindsym $mod+Shift+$left move left 40
+bindsym $mod+Shift+$down move down 40
+bindsym $mod+Shift+$up move up 40
+bindsym $mod+Shift+$right move right 40
 
 bindsym $mod+1 workspace number 1
 bindsym $mod+2 workspace number 2
@@ -71,10 +71,10 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 mode "resize" {
-    bindsym $left resize shrink width 10px
-    bindsym $down resize grow height 10px
-    bindsym $up resize shrink height 10px
-    bindsym $right resize grow width 10px
+    bindsym $left resize shrink width 40px
+    bindsym $right resize grow width 40px
+    bindsym $up resize shrink height 40px
+    bindsym $down resize grow height 40px
 
     bindsym Return mode "default"
     bindsym Escape mode "default"
