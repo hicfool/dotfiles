@@ -23,7 +23,7 @@ set $menu wmenu-run -f "DejaVu Sans Mono 11" -N "#151515" -n "#606060" -s "#FFFF
 bindsym $mod+Return exec $term
 bindsym $mod+q      kill
 bindsym $mod+d      exec $menu
-bindsym Print       exec grim
+bindsym Print       exec grim ~/Pictures/Prints/$(date +'%s_print.png')
 
 floating_modifier $mod normal
 
