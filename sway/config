@@ -18,26 +18,26 @@ set $down j
 set $up k
 set $right l
 set $term foot
-set $menu wmenu-run -f "Terminus 15" -N "#151515" -n "#606060" -s "#FFFFFF" -S "#151515"
+set $menu wmenu-run -f "DejaVu Sans Mono 11" -N "#151515" -n "#606060" -s "#FFFFFF" -S "#151515"
 
 bindsym $mod+Return exec $term
-bindsym $mod+q kill
-bindsym $mod+d exec $menu
-bindsym Print exec grim
+bindsym $mod+q      kill
+bindsym $mod+d      exec $menu
+bindsym Print       exec grim
 
 floating_modifier $mod normal
 
 bindsym $mod+Shift+r reload
 bindsym $mod+Shift+e exec swaymsg exit
 
-bindsym $mod+$left focus left
-bindsym $mod+$down focus down
-bindsym $mod+$up focus up
+bindsym $mod+$left  focus left
+bindsym $mod+$down  focus down
+bindsym $mod+$up    focus up
 bindsym $mod+$right focus right
 
-bindsym $mod+Shift+$left move left 40
-bindsym $mod+Shift+$down move down 40
-bindsym $mod+Shift+$up move up 40
+bindsym $mod+Shift+$left  move left  40
+bindsym $mod+Shift+$down  move down  40
+bindsym $mod+Shift+$up    move up    40
 bindsym $mod+Shift+$right move right 40
 
 bindsym $mod+1 workspace number 1
@@ -69,15 +69,15 @@ bindsym $mod+e layout toggle split
 bindsym $mod+f fullscreen
 
 bindsym $mod+Shift+space floating toggle
-bindsym $mod+space focus mode_toggle
-bindsym $mod+a focus parent
+bindsym $mod+space       focus    mode_toggle
+bindsym $mod+a           focus    parent
 focus_follows_mouse no
 
 mode "resize" {
-    bindsym $left resize shrink width 40px
-    bindsym $right resize grow width 40px
-    bindsym $up resize shrink height 40px
-    bindsym $down resize grow height 40px
+    bindsym $left  resize shrink width  40px
+    bindsym $right resize grow width    40px
+    bindsym $up    resize shrink height 40px
+    bindsym $down  resize grow height   40px
 
     bindsym Return mode "default"
     bindsym Escape mode "default"
@@ -87,13 +87,13 @@ bindsym $mod+r mode "resize"
 
 for_window [class=".*"]  floating enable
 for_window [app_id=".*"] floating enable
-for_window [class=".*"]  border pixel 0
-for_window [app_id=".*"] border pixel 0
+for_window [class=".*"]  border   pixel 0
+for_window [app_id=".*"] border   pixel 0
 
 gaps inner 24
 
 bar mini {
-    font pango:Terminus 15
+    font pango:DejaVu Sans Mono 11
     position top
 
     status_command while date +'%Y-%m-%d %k:%M'; do sleep 1; done
@@ -101,7 +101,7 @@ bar mini {
 
     colors {
         background         #151515
-        statusline         #FFFFFF
+        statusline         #606060
         focused_workspace  #151515 #151515 #FFFFFF
         active_workspace   #151515 #151515 #FFFFFF
         inactive_workspace #151515 #151515 #606060
