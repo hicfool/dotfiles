@@ -96,7 +96,7 @@ bar mini {
     font pango:Terminus 15
     position top
 
-    status_command while date +'%Y-%m-%d %l:%M'; do sleep 1; done
+    status_command while date +'%Y-%m-%d %k:%M'; do sleep 1; done
     tray_output none
 
     colors {
