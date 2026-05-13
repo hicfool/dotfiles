@@ -1,0 +1,26 @@
+[colors-dark]
+cursor     = 151515 d0d0d0
+background = 151515
+foreground = d0d0d0
+
+regular0 = 151515
+regular1 = fb9fb1
+regular2 = acc267
+regular3 = ddb26f
+regular4 = 6fc2ef
+regular5 = e1a3ee
+regular6 = 12cfc0
+regular7 = d0d0d0
+
+bright0 = 505050
+bright1 = eda987
+bright2 = 202020
+bright3 = 303030
+bright4 = b0b0b0
+bright5 = e0e0e0
+bright6 = deaf8f
+bright7 = f5f5f5
+
+selection-foreground  = d0d0d0
+selection-background  = 303030
+urls                  = 6fc2ef
