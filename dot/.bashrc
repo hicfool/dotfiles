@@ -1,5 +1,6 @@
 [[ $- != *i* ]] && return
 echo 'set completion-ignore-case On' > ~/.inputrc
-PS1='\u $PWD : '
+PS1='[$] \w '
 export _JAVA_AWT_WM_NONREPARENTING=1
 export PATH="/home/hic/.local/bin:$PATH"
+alias nnn="nnn -C"
