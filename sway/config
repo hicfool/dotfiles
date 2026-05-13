@@ -1,20 +1,24 @@
-set $mod Mod4
-
-set $left h
-set $down j
-set $up k
-set $right l
-set $term foot
-set $menu wmenu-run -f "DejaVu Sans Mono 11" -N "#000000" -n "#FFFFFF" -M "#000000" -m "#FFFFFF" -S "#FFFFFF" -s "#000000"
-
+input type:keyboard xkb_layout pt
 
 output HDMI-A-1 {
     mode 1920x1080@100.000Hz
 }
 
-input type:keyboard xkb_layout pt
+exec XDG_CURRENT_DESKTOP=sway
+exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+exec --no-startup-id /usr/lib/xdg-desktop-portal -r
 
-exec swaybg -c "#000000" #
+exec_always autotiling
+exec_always swaybg -c "#303030"
+
+set $mod Mod4
+set $left h
+set $down j
+set $up k
+set $right l
+set $term foot
+set $menu wmenu-run -f "Terminus 15" -N "#151515" -n "#606060" -s "#FFFFFF" -S "#151515"
 
 bindsym $mod+Return exec $term
 bindsym $mod+q kill
@@ -23,8 +27,7 @@ bindsym Print exec grim
 
 floating_modifier $mod normal
 
-bindsym $mod+Shift+c reload
-
+bindsym $mod+Shift+r reload
 bindsym $mod+Shift+e exec swaymsg exit
 
 bindsym $mod+$left focus left
@@ -59,16 +62,16 @@ bindsym $mod+Shift+8 move container to workspace number 8
 bindsym $mod+Shift+9 move container to workspace number 9
 bindsym $mod+Shift+0 move container to workspace number 10
 
-bindsym $mod+b splith
-bindsym $mod+v splitv
+bindsym $mod+x splith
+bindsym $mod+y splitv
 
 bindsym $mod+e layout toggle split
 bindsym $mod+f fullscreen
 
 bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
-
 bindsym $mod+a focus parent
+focus_follows_mouse no
 
 mode "resize" {
     bindsym $left resize shrink width 40px
@@ -82,20 +85,26 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-focus_follows_mouse no
-
-for_window [class=".*"] floating enable
+for_window [class=".*"]  floating enable
 for_window [app_id=".*"] floating enable
+for_window [class=".*"]  border pixel 0
+for_window [app_id=".*"] border pixel 0
 
-gaps inner 16
-gaps outer 16
+gaps inner 24
 
-for_window [class=".*"] border pixel 2
-for_window [app_id=".*"] border pixel 2
-default_border pixel 2
-default_floating_border pixel 2
+bar mini {
+    font pango:Terminus 15
+    position top
 
-client.focused          #000000 #000000 #FFFFFF #FFFFFF #FFFFFF
-client.focused_inactive #000000 #000000 #FFFFFF #FFFFFF #FFFFFF
-client.unfocused        #000000 #000000 #AAAAAA #AAAAAA #AAAAAA
-client.urgent           #000000 #000000 #FFFFFF #FFFFFF #FFFFFF
+    status_command while date +'%Y-%m-%d %l:%M'; do sleep 1; done
+    tray_output none
+
+    colors {
+        background         #151515
+        statusline         #FFFFFF
+        focused_workspace  #151515 #151515 #FFFFFF
+        active_workspace   #151515 #151515 #FFFFFF
+        inactive_workspace #151515 #151515 #606060
+        urgent_workspace   #151515 #151515 #606060
+    }
+}
