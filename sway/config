@@ -1,7 +1,8 @@
 input type:keyboard xkb_layout pt
 
 output HDMI-A-1 {
-    mode 1920x1080@100.000Hz
+    mode 1920x1080@100Hz
+    allow_tearing yes
 }
 
 exec XDG_CURRENT_DESKTOP=sway
@@ -87,10 +88,17 @@ bindsym $mod+r mode "resize"
 
 for_window [class=".*"]  floating enable
 for_window [app_id=".*"] floating enable
-for_window [class=".*"]  border   pixel 0
-for_window [app_id=".*"] border   pixel 0
+for_window [class=".*"]  border   pixel 2
+for_window [app_id=".*"] border   pixel 2
 
-gaps inner 24
+client.focused          #DDB26F #DDB26F #FFFFFF #DDB26F #DDB26F
+client.focused_inactive #606060 #606060 #FFFFFF #606060 #606060
+client.unfocused        #606060 #606060 #FFFFFF #606060 #606060
+client.urgent           #606060 #606060 #FFFFFF #606060 #606060
+client.placeholder      #606060 #606060 #FFFFFF #606060 #606060
+client.background       #606060
+
+gaps inner 16
 
 bar mini {
     font pango:DejaVu Sans Mono 11
