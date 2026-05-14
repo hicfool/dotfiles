@@ -19,7 +19,7 @@ set $down j
 set $up k
 set $right l
 set $term foot
-set $menu wmenu-run -f "DejaVu Sans Mono 11" -N "#151515" -n "#606060" -s "#FFFFFF" -S "#151515"
+set $menu wmenu-run -f "DejaVu Sans Mono 11" -N "#151515" -n "#606060" -s "#FFFFFF" -S "#151515" -b
 
 bindsym $mod+Return exec $term
 bindsym $mod+q      kill
@@ -98,7 +98,8 @@ client.urgent           #606060 #606060 #FFFFFF #606060 #606060
 client.placeholder      #606060 #606060 #FFFFFF #606060 #606060
 client.background       #606060
 
-gaps inner 16
+gaps outer 24
+gaps inner 8
 
 bar mini {
     font pango:DejaVu Sans Mono 11
