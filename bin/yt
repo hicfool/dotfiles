@@ -1,2 +1,0 @@
-#!/bin/sh
-yt-dlp $1 -o - | ffplay - -autoexit -loglevel quiet
