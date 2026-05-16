@@ -1,13 +1,6 @@
 input type:keyboard xkb_layout pt
 output HDMI-A-1 mode 1920x1080@100Hz
 
-exec XDG_CURRENT_DESKTOP=sway
-exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
-exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
-exec --no-startup-id /usr/lib/xdg-desktop-portal -r
-exec_always autotiling
-exec_always swaybg -c "#303030"
-
 set $c0 "#151515"
 set $c1 "#606060"
 set $c2 "#6FC2EF"
@@ -18,6 +11,13 @@ set $up k
 set $right l
 set $term foot
 set $menu wmenu-run -f "DejaVu Sans Mono 11" -N $c0 -n $c1 -s $c2 -S $c0 -b
+
+exec XDG_CURRENT_DESKTOP=sway
+exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+exec --no-startup-id /usr/lib/xdg-desktop-portal -r
+exec_always autotiling
+exec_always swaybg -c "#303030"
 
 bindsym $mod+Return exec $term
 bindsym $mod+q      kill
