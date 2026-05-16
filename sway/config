@@ -99,7 +99,7 @@ client.background       $c1
 gaps outer 24
 gaps inner 8
 
-bar swaybar {
+bar {
     font pango:DejaVu Sans Mono 11
     position bottom
 
