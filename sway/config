@@ -106,7 +106,7 @@ bar swaybar {
     tray_output  none
     tray_padding 4
 
-    status_command while date +'%Y-%m-%d %k:%M '; do sleep 1; done
+    status_command while ~/.config/sway/bar; do sleep 1; done
 
     colors {
         background         $c0 
