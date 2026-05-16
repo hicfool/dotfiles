@@ -1,0 +1,19 @@
+#!/bin/sh
+WHITE="\033[0;0m"
+RED="\033[0;31m"
+GREEN="\033[0;32m"
+ORANGE="\033[0;33m"
+BLUE="\033[0;34m"
+PURPLE="\033[0;35m"
+
+clear
+printf "
+$BLUE$USER$WHITE@$RED$HOSTNAME$WHITE
+:::::::::::::
+$GREEN$(uname -m)
+$PURPLE$(uname -r)
+$BLUE$XDG_CURRENT_DESKTOP$WHITE
+:::::::::::::
+Mem: $ORANGE$(free -h --giga | grep "Mem:" | cut -d " " -f 22)$WHITE/$ORANGE$(free -h --giga | grep "Mem:" | cut -d " " -f 14)
+$WHITE
+"
