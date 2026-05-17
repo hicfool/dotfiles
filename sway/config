@@ -4,13 +4,14 @@ output HDMI-A-1 mode 1920x1080@100Hz
 set $c0 "#151515"
 set $c1 "#606060"
 set $c2 "#6FC2EF"
+set $font Noto Sans Mono 11
 set $mod Mod4
 set $left h
 set $down j
 set $up k
 set $right l
 set $term foot
-set $menu wmenu-run -f "DejaVu Sans Mono 11" -N $c0 -n $c1 -s $c2 -S $c0 -b
+set $menu wmenu-run -f "$font" -N $c0 -n $c1 -s $c2 -S $c0 -b
 
 exec XDG_CURRENT_DESKTOP=sway
 exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
@@ -100,7 +101,7 @@ gaps outer 24
 gaps inner 8
 
 bar {
-    font pango:DejaVu Sans Mono 11
+    font pango:$font
     position bottom
 
     tray_output  none
