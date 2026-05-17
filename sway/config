@@ -106,7 +106,7 @@ bar {
     tray_output  none
     tray_padding 4
 
-    status_command while ~/.config/sway/bar; do sleep 1; done
+    status_command while ~/scripts/status; do sleep 1; done
 
     colors {
         background         $c0 
