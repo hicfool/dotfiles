@@ -18,7 +18,7 @@ exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec --no-startup-id /usr/lib/xdg-desktop-portal -r
 exec_always autotiling
-exec_always swaybg -c "#303030"
+exec_always swaybg -c $c0
 
 bindsym $mod+Return exec $term
 bindsym $mod+q      kill
