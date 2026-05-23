@@ -4,7 +4,6 @@ output HDMI-A-1 mode 1920x1080@100Hz
 set $c0 "#303030"
 set $c1 "#808080"
 set $c2 "#FFFFFF"
-set $gp 16
 set $font Noto Sans Mono 11
 set $mod Mod4
 set $left h
@@ -104,19 +103,16 @@ client.urgent           $c1 $c1 $c2 $c1 $c1
 client.placeholder      $c1 $c1 $c2 $c1 $c1
 client.background       $c1
 
-gaps inner $gp
+gaps inner 16
 
-bar {
+bar bar-0 {
     font pango:$font
     position top
     height 48
-    gaps $gp
 
     workspace_min_width 32
-
-    tray_output  *
+    tray_output *
     tray_padding 16
-
     status_command while ~/scripts/status; do sleep 1; done
 
     colors {
