@@ -1,9 +1,10 @@
 input type:keyboard xkb_layout pt
 output HDMI-A-1 mode 1920x1080@100Hz
 
-set $c0 "#151515"
-set $c1 "#606060"
-set $c2 "#6FC2EF"
+set $c0 "#303030"
+set $c1 "#808080"
+set $c2 "#FFFFFF"
+set $gp 16
 set $font Noto Sans Mono 11
 set $mod Mod4
 set $left h
@@ -18,7 +19,7 @@ exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec --no-startup-id /usr/lib/xdg-desktop-portal -r
 exec_always autotiling
-exec_always swaybg -c $c0
+exec_always swaybg -c "#BBBBBB"
 
 bindsym $mod+Return exec $term
 bindsym $mod+q      kill
@@ -93,8 +94,8 @@ bindsym $mod+r mode "resize"
 
 for_window [class=".*"]  floating enable
 for_window [app_id=".*"] floating enable
-for_window [class=".*"]  border   pixel 2
-for_window [app_id=".*"] border   pixel 2
+for_window [class=".*"]  border   pixel 0
+for_window [app_id=".*"] border   pixel 0
 
 client.focused          $c2 $c2 $c0 $c2 $c2 
 client.focused_inactive $c1 $c1 $c2 $c1 $c1
@@ -103,21 +104,24 @@ client.urgent           $c1 $c1 $c2 $c1 $c1
 client.placeholder      $c1 $c1 $c2 $c1 $c1
 client.background       $c1
 
-gaps outer 24
-gaps inner 8
+gaps inner $gp
 
 bar {
     font pango:$font
-    position bottom
+    position top
+    height 48
+    gaps $gp
 
-    tray_output  none
-    tray_padding 4
+    workspace_min_width 32
+
+    tray_output  *
+    tray_padding 16
 
     status_command while ~/scripts/status; do sleep 1; done
 
     colors {
         background         $c0 
-        statusline         $c1 
+        statusline         $c1
         focused_workspace  $c0 $c0 $c2
         active_workspace   $c0 $c0 $c2
         inactive_workspace $c0 $c0 $c1
