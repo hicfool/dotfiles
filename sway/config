@@ -1,9 +1,10 @@
+exec_always autotiling
 input type:keyboard xkb_layout pt
 output HDMI-A-1 mode 1920x1080@100Hz
 
-set $c0 "#303030"
-set $c1 "#808080"
-set $c2 "#FFFFFF"
+set $c0 "#2e3440"
+set $c1 "#d8dee9"
+set $c2 "#b48ead"
 set $font Noto Sans Mono 11
 set $mod Mod4
 set $left h
@@ -11,14 +12,13 @@ set $down j
 set $up k
 set $right l
 set $term foot
-set $menu wmenu-run -f "$font" -N $c0 -n $c1 -s $c2 -S $c0 -b
+set $menu wmenu-run -l 49 -p "run:" -f "$font" -N $c0 -n $c1 -M $c2 -m $c0 -s $c2 -S $c0
 
 exec XDG_CURRENT_DESKTOP=sway
 exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec --no-startup-id /usr/lib/xdg-desktop-portal -r
-exec_always autotiling
-exec_always swaybg -c "#BBBBBB"
+exec_always swaybg -c $c0
 
 bindsym $mod+Return exec $term
 bindsym $mod+q      kill
@@ -70,7 +70,8 @@ bindsym $mod+Shift+0 move container to workspace number 10
 
 bindsym $mod+x splith
 bindsym $mod+y splitv
-
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 bindsym $mod+f fullscreen
 
@@ -91,32 +92,32 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-for_window [class=".*"]  floating enable
-for_window [app_id=".*"] floating enable
-for_window [class=".*"]  border   pixel 0
-for_window [app_id=".*"] border   pixel 0
+# for_window [class=".*"]  floating enable
+# for_window [app_id=".*"] floating enable
+for_window [class=".*"]  border   pixel 4
+for_window [app_id=".*"] border   pixel 4
+titlebar_border_thickness               4
+gaps inner                              0
 
 client.focused          $c2 $c2 $c0 $c2 $c2 
-client.focused_inactive $c1 $c1 $c2 $c1 $c1
-client.unfocused        $c1 $c1 $c2 $c1 $c1
-client.urgent           $c1 $c1 $c2 $c1 $c1
-client.placeholder      $c1 $c1 $c2 $c1 $c1
-client.background       $c1
-
-gaps inner 16
+client.focused_inactive $c2 $c2 $c0 $c0 $c0
+client.unfocused        $c0 $c0 $c1 $c0 $c0
+client.urgent           $c0 $c0 $c1 $c0 $c0
+client.placeholder      $c0 $c0 $c1 $c0 $c0
+client.background       $c0
 
 bar bar-0 {
     font pango:$font
     position top
-    height 48
+    height 24
 
-    workspace_min_width 32
+    workspace_min_width 16
     tray_output *
     tray_padding 16
     status_command while ~/scripts/status; do sleep 1; done
 
     colors {
-        background         $c0 
+        background         $c0
         statusline         $c1
         focused_workspace  $c0 $c0 $c2
         active_workspace   $c0 $c0 $c2
