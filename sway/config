@@ -111,9 +111,8 @@ bar bar-0 {
     position top
     height 24
 
-    workspace_min_width 16
     tray_output *
-    tray_padding 16
+    tray_padding 4
     status_command while ~/scripts/status; do sleep 1; done
 
     colors {
