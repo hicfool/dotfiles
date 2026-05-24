@@ -2,27 +2,32 @@ exec_always autotiling
 input type:keyboard xkb_layout pt
 output HDMI-A-1 mode 1920x1080@100Hz
 
-set $c0 "#2e3440"
-set $c1 "#d8dee9"
-set $c2 "#b48ead"
 set $font Noto Sans Mono 11
+set $wall ~/Pictures/Walls/lain.png
+set $bg "#2e3440"
+set $fg "#d8dee9"
+set $c0 "#4c566a"
+set $c1 "#81a1c1"
+
 set $mod Mod4
 set $left h
 set $down j
 set $up k
 set $right l
 set $term foot
-set $menu wmenu-run -l 49 -p "run:" -f "$font" -N $c0 -n $c1 -M $c2 -m $c0 -s $c2 -S $c0
+set $menu wmenu-run -l 49 -p "run:" -f "$font" -N $bg -n $fg -M $c1 -m $bg -s $c1 -S $bg
+set $lock swaylock -i $wall -u
 
 exec XDG_CURRENT_DESKTOP=sway
 exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec --no-startup-id /usr/lib/xdg-desktop-portal -r
-exec_always swaybg -c $c0
+exec_always swaybg -i $wall
 
 bindsym $mod+Return exec $term
 bindsym $mod+q      kill
 bindsym $mod+d      exec $menu
+bindsym $mod+Escape exec $lock
 bindsym Print       exec grim ~/Pictures/Prints/$(date +'%s_print.png')
 
 bindsym --locked XF86AudioMute         exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
@@ -92,35 +97,37 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# for_window [class=".*"]  floating enable
-# for_window [app_id=".*"] floating enable
-for_window [class=".*"]  border   pixel 4
-for_window [app_id=".*"] border   pixel 4
-titlebar_border_thickness               4
-gaps inner                              0
+for_window [class=".*"]  border pixel 2
+for_window [app_id=".*"] border pixel 2
+titlebar_border_thickness             2
+gaps inner                            16
+gaps outer                            32
 
-client.focused          $c2 $c2 $c0 $c2 $c2 
-client.focused_inactive $c2 $c2 $c0 $c0 $c0
-client.unfocused        $c0 $c0 $c1 $c0 $c0
-client.urgent           $c0 $c0 $c1 $c0 $c0
-client.placeholder      $c0 $c0 $c1 $c0 $c0
-client.background       $c0
+#                       brdr    bg      txt     indi      cbrdr
+client.focused          $c1     $c0     $fg     $c1       $c1 
+client.focused_inactive $c0     $bg     $fg     $c0       $c0
+client.unfocused        $c0     $bg     $fg     $c0       $c0
+client.urgent           $c0     $bg     $fg     $c0       $c0
+client.placeholder      $c0     $bg     $fg     $c0       $c0
+client.background       $bg
 
 bar bar-0 {
     font pango:$font
-    position top
+    position bottom
     height 24
 
     tray_output *
     tray_padding 4
+    pango_markup enabled
     status_command while ~/scripts/status; do sleep 1; done
 
     colors {
-        background         $c0
-        statusline         $c1
-        focused_workspace  $c0 $c0 $c2
-        active_workspace   $c0 $c0 $c2
-        inactive_workspace $c0 $c0 $c1
-        urgent_workspace   $c0 $c0 $c1
+        background         $bg
+        statusline         $fg
+        #                  brdr   bg    txt
+        focused_workspace  $bg    $bg   $c1
+        active_workspace   $bg    $bg   $fg
+        inactive_workspace $bg    $bg   $fg
+        urgent_workspace   $c0    $c0   $fg
     }
 }
