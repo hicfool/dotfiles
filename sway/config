@@ -1,12 +1,11 @@
-exec_always autotiling
 input type:keyboard xkb_layout pt
 output HDMI-A-1 mode 1920x1080@100Hz
 
 set $font Noto Sans Mono 11
-set $bg "#181818"
-set $fg "#d8d8d8"
-set $c0 "#606060"
-set $c1 "#6A9FB5"
+set $bg "#111111"
+set $fg "#dcdccc"
+set $c0 "#222222"
+set $c1 "#6ca0a3"
 
 set $mod Mod4
 set $left h
@@ -14,7 +13,7 @@ set $down j
 set $up k
 set $right l
 set $term foot
-set $menu wmenu-run -l 49 -p "run:" -f "$font" -N $bg -n $fg -M $c1 -m $bg -s $c1 -S $bg
+set $menu wmenu-run -l 59 -p "run:" -f "$font" -N $bg -n $fg -M $c1 -m $bg -s $c1 -S $bg
 set $lock swaylock -c $bg -u
 
 exec XDG_CURRENT_DESKTOP=sway
@@ -100,7 +99,6 @@ for_window [class=".*"]  border pixel 2
 for_window [app_id=".*"] border pixel 2
 titlebar_border_thickness             2
 gaps inner                            8
-gaps outer                            16
 
 font pango: $font
 
@@ -110,7 +108,7 @@ client.focused_inactive $c0     $bg     $fg     $c0       $c0
 client.unfocused        $c0     $bg     $fg     $c0       $c0
 client.urgent           $c0     $bg     $fg     $c0       $c0
 client.placeholder      $c0     $bg     $fg     $c0       $c0
-client.background       $bg
+client.background       $c0
 
 bar bar-0 {
     font pango: $font
@@ -126,9 +124,9 @@ bar bar-0 {
         background         $bg
         statusline         $fg
         #                  brdr   bg    txt
-        focused_workspace  $bg    $bg   $c1
-        active_workspace   $bg    $bg   $c0
-        inactive_workspace $bg    $bg   $c0
-        urgent_workspace   $bg    $bg   $fg
+        focused_workspace  $c1    $c1   $bg
+        active_workspace   $bg    $bg   $fg
+        inactive_workspace $bg    $bg   $fg
+        urgent_workspace   $c0    $c0   $fg
     }
 }
