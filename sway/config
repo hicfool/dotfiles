@@ -3,7 +3,6 @@ output HDMI-A-1 mode 1920x1080@100Hz
 floating_modifier Mod4 normal
 focus_follows_mouse no
 default_border none
-font pango:Noto Sans Mono 10
 gaps inner 32
 for_window [class=".*"] floating enable
 for_window [app_id=".*"] floating enable
