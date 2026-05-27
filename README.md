@@ -1,3 +1,6 @@
+![](https://github.com/hicfool/dotfiles/blob/main/sway.png?raw=true)
+
+```
 Notes
 
 -
@@ -14,3 +17,4 @@ Notes
 
 * Proton audio crackling
     sudo pacman -S realtime-privileges; sudo gpasswd -a $USER realtime
+```
