@@ -1,4 +1,4 @@
-![](https://github.com/hicfool/dotfiles/blob/main/print.gif?raw=true)
+![](https://raw.githubusercontent.com/hicfool/dotfiles/refs/heads/main/print.gif)
 
 ```
 Notes
