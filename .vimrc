@@ -6,7 +6,8 @@ hi clear CursorLineNr
 hi LineNr ctermfg=darkgray ctermbg=none
 hi CursorLine cterm=none
 hi CursorLineNr ctermfg=blue ctermbg=none
-hi EndOfBuffer ctermfg=darkgray ctermbg=none
+hi Visual ctermfg=black ctermbg=darkgray
+hi EndOfBuffer ctermfg=black
 
 set nobackup nowritebackup
 set noswapfile
@@ -18,8 +19,7 @@ set autoindent
 set mouse=a
 set timeoutlen=1000 ttimeoutlen=0
 set hlsearch
+set noruler
 set numberwidth=1
-set number
-set ruler
 set guicursor=n-v-c-i:block-Cursor
 set cursorline
