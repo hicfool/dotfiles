@@ -1,132 +1,59 @@
 input type:keyboard xkb_layout pt
 output HDMI-A-1 mode 1920x1080@100Hz
-
-set $font Noto Sans Mono 11
-set $bg "#111111"
-set $fg "#dcdccc"
-set $c0 "#222222"
-set $c1 "#6ca0a3"
-
-set $mod Mod4
-set $left h
-set $down j
-set $up k
-set $right l
-set $term foot
-set $menu wmenu-run -l 59 -p "run:" -f "$font" -N $bg -n $fg -M $c1 -m $bg -s $c1 -S $bg
-set $lock swaylock -c $bg -u
+floating_modifier Mod4 normal
+focus_follows_mouse no
+default_border none
+font pango:Noto Sans Mono 10
+gaps inner 32
+for_window [class=".*"] floating enable
+for_window [app_id=".*"] floating enable
 
 exec XDG_CURRENT_DESKTOP=sway
 exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec --no-startup-id /usr/lib/xdg-desktop-portal -r
-exec_always swaybg -c $bg
+exec_always swaybg -c "#767F9E"
 
-bindsym $mod+Return exec $term
-bindsym $mod+q      kill
-bindsym $mod+d      exec $menu
-bindsym $mod+Escape exec $lock
-bindsym Print       exec grim ~/Pictures/Prints/$(date +'%s_print.png')
-
-bindsym --locked XF86AudioMute         exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
-bindsym --locked XF86AudioLowerVolume  exec pactl set-sink-volume \@DEFAULT_SINK@ -10%
-bindsym --locked XF86AudioRaiseVolume  exec pactl set-sink-volume \@DEFAULT_SINK@ +10%
+bindsym Mod4+q kill
+bindsym Mod4+h focus left
+bindsym Mod4+j focus down
+bindsym Mod4+k focus up
+bindsym Mod4+l focus right
+bindsym Mod4+Shift+h move left  40
+bindsym Mod4+Shift+j move down  40
+bindsym Mod4+Shift+k move up    40
+bindsym Mod4+Shift+l move right 40
+bindsym Mod4+1 workspace number 1
+bindsym Mod4+2 workspace number 2
+bindsym Mod4+3 workspace number 3
+bindsym Mod4+4 workspace number 4
+bindsym Mod4+5 workspace number 5
+bindsym Mod4+Shift+1 move container to workspace number 1
+bindsym Mod4+Shift+2 move container to workspace number 2
+bindsym Mod4+Shift+3 move container to workspace number 3
+bindsym Mod4+Shift+4 move container to workspace number 4
+bindsym Mod4+Shift+5 move container to workspace number 5
+bindsym Mod4+x splith
+bindsym Mod4+y splitv
+bindsym Mod4+e layout toggle split
+bindsym Mod4+f fullscreen
+bindsym Mod4+s floating toggle
+bindsym Mod4+Space focus mode_toggle
+bindsym Mod4+r mode "resize"
+bindsym Mod4+Return exec foot
+bindsym Mod4+d exec wmenu-run -f "NotoSansMono 9" -N "#111111" -n "#dcdccc" -M "#111111" -m "#dcdccc" -s "#111111" -S "#dcdccc"
+bindsym Print exec grim ~/Pictures/Prints/$(date +'%s_print.png')
+bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
+bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -10%
+bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +10%
 bindsym --locked XF86MonBrightnessDown exec ddcutil setvcp 10 - 10
-bindsym --locked XF86MonBrightnessUp   exec ddcutil setvcp 10 + 10
-
-floating_modifier $mod normal
-
-bindsym $mod+Shift+r reload
-bindsym $mod+Shift+e exec swaymsg exit
-
-bindsym $mod+$left  focus left
-bindsym $mod+$down  focus down
-bindsym $mod+$up    focus up
-bindsym $mod+$right focus right
-
-bindsym $mod+Shift+$left  move left  40
-bindsym $mod+Shift+$down  move down  40
-bindsym $mod+Shift+$up    move up    40
-bindsym $mod+Shift+$right move right 40
-
-bindsym $mod+1 workspace number 1
-bindsym $mod+2 workspace number 2
-bindsym $mod+3 workspace number 3
-bindsym $mod+4 workspace number 4
-bindsym $mod+5 workspace number 5
-bindsym $mod+6 workspace number 6
-bindsym $mod+7 workspace number 7
-bindsym $mod+8 workspace number 8
-bindsym $mod+9 workspace number 9
-bindsym $mod+0 workspace number 10
-
-bindsym $mod+Shift+1 move container to workspace number 1
-bindsym $mod+Shift+2 move container to workspace number 2
-bindsym $mod+Shift+3 move container to workspace number 3
-bindsym $mod+Shift+4 move container to workspace number 4
-bindsym $mod+Shift+5 move container to workspace number 5
-bindsym $mod+Shift+6 move container to workspace number 6
-bindsym $mod+Shift+7 move container to workspace number 7
-bindsym $mod+Shift+8 move container to workspace number 8
-bindsym $mod+Shift+9 move container to workspace number 9
-bindsym $mod+Shift+0 move container to workspace number 10
-
-bindsym $mod+x splith
-bindsym $mod+y splitv
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
-bindsym $mod+f fullscreen
-
-bindsym $mod+Shift+space floating toggle
-bindsym $mod+space       focus    mode_toggle
-bindsym $mod+a           focus    parent
-focus_follows_mouse no
+bindsym --locked XF86MonBrightnessUp exec ddcutil setvcp 10 + 10
 
 mode "resize" {
-    bindsym $left  resize shrink width  40px
-    bindsym $right resize grow width    40px
-    bindsym $up    resize shrink height 40px
-    bindsym $down  resize grow height   40px
-
+    bindsym h  resize shrink width 40px
+    bindsym l resize grow width 40px
+    bindsym k resize shrink height 40px
+    bindsym j resize grow height 40px
     bindsym Return mode "default"
     bindsym Escape mode "default"
-}
-
-bindsym $mod+r mode "resize"
-
-for_window [class=".*"]  border pixel 2
-for_window [app_id=".*"] border pixel 2
-titlebar_border_thickness             2
-gaps inner                            8
-
-font pango: $font
-
-#                       brdr    bg      txt     indi      cbrdr
-client.focused          $c1     $c1     $bg     $c1       $c1 
-client.focused_inactive $c0     $bg     $fg     $c0       $c0
-client.unfocused        $c0     $bg     $fg     $c0       $c0
-client.urgent           $c0     $bg     $fg     $c0       $c0
-client.placeholder      $c0     $bg     $fg     $c0       $c0
-client.background       $c0
-
-bar bar-0 {
-    font pango: $font
-    position top
-    height 24
-
-    tray_output *
-    tray_padding 4
-    pango_markup enabled
-    status_command while ~/scripts/status; do sleep 1; done
-
-    colors {
-        background         $bg
-        statusline         $fg
-        #                  brdr   bg    txt
-        focused_workspace  $c1    $c1   $bg
-        active_workspace   $bg    $bg   $fg
-        inactive_workspace $bg    $bg   $fg
-        urgent_workspace   $c0    $c0   $fg
-    }
 }
