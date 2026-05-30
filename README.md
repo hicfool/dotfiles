@@ -1,3 +1,5 @@
+![](https://raw.githubusercontent.com/hicfool/dotfiles/refs/heads/main/sway.gif)
+
 ```
 Notes
 
