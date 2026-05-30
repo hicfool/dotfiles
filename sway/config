@@ -6,10 +6,11 @@ input type:pointer {
 }
 floating_modifier Mod4 normal
 focus_follows_mouse no
-default_border pixel 2
 gaps inner 32
 for_window [class=".*"] floating enable
 for_window [app_id=".*"] floating enable
+for_window [class=".*"] border pixel 2
+for_window [app_id=".*"] border pixel 2
 
 set $c0 #111111
 set $c1 #666666
