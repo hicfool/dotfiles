@@ -2,16 +2,20 @@ input type:keyboard xkb_layout pt
 output HDMI-A-1 mode 1920x1080@100Hz
 floating_modifier Mod4 normal
 focus_follows_mouse no
-default_border none
+default_border pixel 2
 gaps inner 32
 for_window [class=".*"] floating enable
 for_window [app_id=".*"] floating enable
+
+set $c0 #111111
+set $c1 #666666
+set $c2 #dcdccc
 
 exec XDG_CURRENT_DESKTOP=sway
 exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec --no-startup-id /usr/lib/xdg-desktop-portal -r
-exec_always swaybg -i ~/Pictures/Walls/wall.png
+exec_always swaybg -c "$c0"
 
 bindsym Mod4+q kill
 bindsym Mod4+h focus left
@@ -40,7 +44,7 @@ bindsym Mod4+s floating toggle
 bindsym Mod4+Space focus mode_toggle
 bindsym Mod4+r mode "resize"
 bindsym Mod4+Return exec foot
-bindsym Mod4+d exec wmenu-run -f "Terminus 15" -N "#111111" -n "#dcdccc" -M "#111111" -m "#dcdccc" -s "#111111" -S "#dcdccc"
+bindsym Mod4+d exec wmenu-run -f "Noto Sans Mono 12" -N "$c0" -n "$c1" -s "$c0" -S "$c2"
 bindsym Print exec grim ~/Pictures/Prints/$(date +'%Y%m%d%H%M%S_print.png')
 bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
 bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -10%
@@ -56,3 +60,10 @@ mode "resize" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
+
+# class                 brdr    bg    txt    indi    chld_brdr
+client.focused          $c2     $c0   $c2    $c2     $c2
+client.focused_inactive $c1     $c0   $c1    $c1     $c1
+client.unfocused        $c1     $c0   $c1    $c1     $c1
+client.urgent           $c1     $c0   $c1    $c1     $c1
+client.placeholder      $c1     $c0   $c1    $c1     $c1
