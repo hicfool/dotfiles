@@ -1,5 +1,3 @@
-![](https://raw.githubusercontent.com/hicfool/dotfiles/refs/heads/main/print.gif)
-
 ```
 Notes
 
