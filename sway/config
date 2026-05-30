@@ -1,5 +1,9 @@
-input type:keyboard xkb_layout pt
 output HDMI-A-1 mode 1920x1080@100Hz
+input type:keyboard xkb_layout pt
+input type:pointer {
+    accel_profile "flat"
+    pointer_accel 0.5
+}
 floating_modifier Mod4 normal
 focus_follows_mouse no
 default_border pixel 2
