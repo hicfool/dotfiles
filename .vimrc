@@ -6,7 +6,7 @@ hi clear CursorLineNr
 hi LineNr ctermfg=darkgray ctermbg=none
 hi CursorLine cterm=none
 hi CursorLineNr ctermfg=blue ctermbg=none
-hi Visual ctermfg=black ctermbg=darkgray
+hi Visual ctermfg=blue ctermbg=black
 hi EndOfBuffer ctermfg=black
 
 set nobackup nowritebackup
