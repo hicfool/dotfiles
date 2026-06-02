@@ -47,8 +47,8 @@ bindsym Mod4+Space focus mode_toggle
 bindsym Mod4+r mode "resize"
 bindsym Mod4+Return exec foot
 bindsym Mod4+d exec wmenu-run -f "Noto Sans Mono 10" -N "$c0" -n "$c2" -s "$c0" -S "$c2"
-bindsym Print exec grim ~/Pictures/Prints/$(date +'%Y%m%d%H%M%S_print.png')
-bindsym Shift+Print exec grim -g "$(slurp)" ~/Pictures/Prints/$(date +'%Y%m%d%H%M%S_print.png')
+bindsym Print exec ~/scripts/prnt
+bindsym Shift+Print exec ~/scripts/prnt -s
 bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
 bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -10%
 bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +10%
