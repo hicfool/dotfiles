@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/hicfool/dotfiles/refs/heads/main/sway.png)
+![](https://raw.githubusercontent.com/hicfool/dotfiles/refs/heads/main/print.png)
 
 ```
 Notes
