@@ -1,4 +1,4 @@
-# Dotfiles
+# Looks
 ![](https://raw.githubusercontent.com/hicfool/dotfiles/refs/heads/main/home/print.png)
 
 # Notes
