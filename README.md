@@ -1,8 +1,8 @@
-![](https://raw.githubusercontent.com/hicfool/dotfiles/refs/heads/main/print.png)
+# Dotfiles
+![](https://raw.githubusercontent.com/hicfool/dotfiles/refs/heads/main/home/print.png)
 
+# Notes
 ```
-Notes
-
 -
 
 * Missing text characters/emojis
