@@ -16,6 +16,7 @@ input type:keyboard xkb_layout pt
 
 floating_modifier Mod4 normal
 gaps inner 16
+gaps outer 128
 for_window [class=".*"] floating enable
 for_window [class=".*"] border pixel 2
 
@@ -29,10 +30,10 @@ bindsym Mod4+h focus left
 bindsym Mod4+j focus down
 bindsym Mod4+k focus up
 bindsym Mod4+l focus right
-bindsym Mod4+Shift+h move left  40
-bindsym Mod4+Shift+j move down  40
-bindsym Mod4+Shift+k move up    40
-bindsym Mod4+Shift+l move right 40
+bindsym Mod4+Shift+h move left  20px
+bindsym Mod4+Shift+j move down  20px
+bindsym Mod4+Shift+k move up    20px
+bindsym Mod4+Shift+l move right 20px
 bindsym Mod4+1 workspace number 1
 bindsym Mod4+2 workspace number 2
 bindsym Mod4+3 workspace number 3
@@ -61,10 +62,10 @@ bindsym --locked XF86MonBrightnessDown exec ddcutil setvcp 10 - 10
 bindsym --locked XF86MonBrightnessUp exec ddcutil setvcp 10 + 10
 
 mode "resize" {
-    bindsym h  resize shrink width 40px
-    bindsym l resize grow width 40px
-    bindsym k resize shrink height 40px
-    bindsym j resize grow height 40px
+    bindsym h  resize shrink width 20px
+    bindsym l resize grow width 20px
+    bindsym k resize shrink height 20px
+    bindsym j resize grow height 20px
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
