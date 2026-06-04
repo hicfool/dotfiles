@@ -14,11 +14,11 @@ input type:pointer {
 
 input type:keyboard xkb_layout pt
 
-floating_modifier Mod4 normal
 gaps inner 16
 gaps outer 128
 for_window [class=".*"] floating enable
 for_window [class=".*"] border pixel 2
+floating_modifier Mod4 normal
 
 exec XDG_CURRENT_DESKTOP=sway
 exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
