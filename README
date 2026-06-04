@@ -1,9 +1,8 @@
-# Looks
-![](https://raw.githubusercontent.com/hicfool/dotfiles/refs/heads/main/home/print.png)
+[sway]
 
-# Notes
-```
--
+• screenshot: https://raw.githubusercontent.com/hicfool/dotfiles/refs/heads/main/home/print.png
+
+[notes]
 
 * Missing text characters/emojis
     sudo pacman -S noto-fonts noto-fonts-extra noto-fonts-cjk noto-fonts-emoji
@@ -17,4 +16,3 @@
 
 * Proton audio crackling
     sudo pacman -S realtime-privileges; sudo gpasswd -a $USER realtime
-```
