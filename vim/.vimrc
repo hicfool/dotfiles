@@ -3,11 +3,11 @@ colorscheme wal
 
 hi clear CursorLine
 hi clear CursorLineNr
-hi LineNr ctermfg=darkgray ctermbg=none
-hi CursorLine cterm=none
-hi CursorLineNr ctermfg=blue ctermbg=none
-hi Visual ctermfg=blue ctermbg=black
-hi EndOfBuffer ctermfg=black
+hi LineNr ctermbg=none ctermfg=darkgray
+hi CursorLine ctermbg=none
+hi CursorLineNr ctermbg=none ctermfg=blue
+hi Visual ctermbg=black ctermfg=blue
+hi EndOfBuffer ctermbg=none ctermfg=black
 
 set nobackup nowritebackup
 set noswapfile
