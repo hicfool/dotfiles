@@ -1,23 +1,28 @@
-output HDMI-A-1 mode 1920x1080@100.000Hz
-input type:keyboard xkb_layout pt
+set $c0 #eeeeee
+set $c1 #bcbcbc
+set $c2 #d75f00
+
+output HDMI-A-1 {
+    mode 1920x1080@100.000Hz
+    bg $c0 solid_color
+}
+
 input type:pointer {
     accel_profile "flat"
     pointer_accel 0.5
 }
+
+input type:keyboard xkb_layout pt
+
 floating_modifier Mod4 normal
 gaps inner 16
 for_window [class=".*"] floating enable
 for_window [class=".*"] border pixel 2
 
-set $c0 #eeeeee
-set $c1 #bcbcbc
-set $c2 #d75f00
-
 exec XDG_CURRENT_DESKTOP=sway
 exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec --no-startup-id /usr/lib/xdg-desktop-portal -r
-exec_always swaybg -c "$c0"
 
 bindsym Mod4+q kill
 bindsym Mod4+h focus left
