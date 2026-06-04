@@ -1,21 +1,21 @@
 SWAY
 
 PRINT
-https://raw.githubusercontent.com/hicfool/dotfiles/refs/heads/main/home/img.png
+- https://raw.githubusercontent.com/hicfool/dotfiles/refs/heads/main/home/img.png
 
 ---
 
 NOTES
 
-Missing text characters/emojis
+MISSING TXT/EMOJI
 - sudo pacman -S noto-fonts noto-fonts-extra noto-fonts-cjk noto-fonts-emoji
 
-Monitor brightness control
+MONITOR BRIGHTNESS
 - sudo pacman -S ddcutil; sudo modprobe i2c-dev
 
-Manually set environment variables for xdg-desktop-portal-gtk to work
+MANUALLY SET ENV VARS FOR xdg-desktop-portal-gtk
 - systemctl --user import-environment DISPLAY XAUTHORITY
 - systemctl --user restart xdg-desktop-portal-gtk
 
-Proton audio crackling
+PROTON AUDIO CRACKLING
 - sudo pacman -S realtime-privileges; sudo gpasswd -a $USER realtime
