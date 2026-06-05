@@ -1,0 +1,2 @@
+#!/bin/sh
+env XDG_SESSION_TYPE=wayland XDG_CURRENT_DESKTOP=sway:wlroots dbus-run-session sway --unsupported-gpu
