@@ -20,10 +20,8 @@ for_window [class=".*"] floating enable
 for_window [class=".*"] border pixel 2
 floating_modifier Mod4 normal
 
-exec XDG_CURRENT_DESKTOP=sway
-exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
-exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec --no-startup-id /usr/lib/xdg-desktop-portal -r
+exec --no-startup-id /usr/lib/xdg-desktop-portal-wlr
 
 bindsym Mod4+q kill
 bindsym Mod4+h focus left
