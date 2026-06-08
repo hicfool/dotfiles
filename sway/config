@@ -50,7 +50,7 @@ bindsym Mod4+s floating toggle
 bindsym Mod4+Space focus mode_toggle
 bindsym Mod4+r mode "resize"
 bindsym Mod4+Return exec foot
-bindsym Mod4+d exec wmenu-run -f "Noto Sans Mono 10" -N "$c0" -n "$c2" -s "$c0" -S "$c2"
+bindsym Mod4+d exec wmenu-run -f "Noto Sans Mono 11" -N "$c0" -n "$c2" -s "$c0" -S "$c2"
 bindsym Print exec ~/scripts/prnt
 bindsym Shift+Print exec ~/scripts/prnt -s
 bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
