@@ -1,6 +1,6 @@
-set $c0 #181818
-set $c1 #6b6b6b
-set $c2 #d8d8d8
+set $c0 #2e3440
+set $c1 #4c566a
+set $c2 #81a1c1
 
 output HDMI-A-1 {
     mode 1920x1080@100.000Hz
@@ -15,7 +15,6 @@ input type:pointer {
 input type:keyboard xkb_layout pt
 
 gaps inner 16
-gaps outer 80
 for_window [class=".*"] floating enable
 for_window [class=".*"] border pixel 2
 floating_modifier Mod4 normal
