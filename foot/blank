@@ -1,0 +1,34 @@
+[colors-dark]
+background = 151515
+foreground = EEEEEE
+cursor     = 151515 EEEEEE
+
+selection-foreground = 151515
+selection-background = EEEEEE
+
+regular0 = EEEEEE
+regular1 = EEEEEE
+regular2 = EEEEEE
+regular3 = EEEEEE
+regular4 = EEEEEE
+regular5 = EEEEEE
+regular6 = EEEEEE
+regular7 = EEEEEE
+
+bright0  = EEEEEE
+bright1  = EEEEEE
+bright2  = EEEEEE
+bright3  = EEEEEE
+bright4  = EEEEEE
+bright5  = EEEEEE
+bright6  = EEEEEE
+bright7  = EEEEEE
+
+dim0     = EEEEEE
+dim1     = EEEEEE
+dim2     = EEEEEE
+dim3     = EEEEEE
+dim4     = EEEEEE
+dim5     = EEEEEE
+dim6     = EEEEEE
+dim7     = EEEEEE
