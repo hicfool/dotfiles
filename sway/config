@@ -1,6 +1,6 @@
-set $c0 #151515
-set $c1 #505050
-set $c2 #EEEEEE
+set $c0 #282a36
+set $c1 #4d4d4d
+set $c2 #ff79c6
 
 output HDMI-A-1 {
     mode 1920x1080@100.000Hz
@@ -14,7 +14,6 @@ input type:pointer {
 
 input type:keyboard xkb_layout pt
 
-gaps inner 16
 for_window [class=".*"] floating enable
 for_window [class=".*"] border pixel 2
 floating_modifier Mod4 normal
@@ -49,7 +48,7 @@ bindsym Mod4+s floating toggle
 bindsym Mod4+Space focus mode_toggle
 bindsym Mod4+r mode "resize"
 bindsym Mod4+Return exec foot
-bindsym Mod4+d exec wmenu-run -f "Noto Sans Mono 11" -N "$c0" -n "$c2" -s "$c0" -S "$c2"
+bindsym Mod4+d exec wmenu-run -f "Noto Sans Mono 12" -N "$c0" -n "$c2" -s "$c0" -S "$c2"
 bindsym Print exec ~/scripts/prnt
 bindsym Shift+Print exec ~/scripts/prnt -s
 bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
