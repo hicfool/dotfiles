@@ -1,6 +1,6 @@
-set $c0 #282a36
-set $c1 #4d4d4d
-set $c2 #ff79c6
+set $c0 #2e3440
+set $c1 #3b4252
+set $c2 #b48ead
 
 output HDMI-A-1 {
     mode 1920x1080@100.000Hz
