@@ -1,3 +1,6 @@
+include /etc/sway/config.d/*
+exec dbus-update-activation-environment DISPLAY I3SOCK SWAYSOCK WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+
 set $c0 #2e3440
 set $c1 #3b4252
 set $c2 #b48ead
@@ -17,9 +20,6 @@ input type:keyboard xkb_layout pt
 for_window [class=".*"] floating enable
 for_window [class=".*"] border pixel 2
 floating_modifier Mod4 normal
-
-exec --no-startup-id /usr/lib/xdg-desktop-portal -r
-exec --no-startup-id /usr/lib/xdg-desktop-portal-wlr
 
 bindsym Mod4+q kill
 bindsym Mod4+h focus left
