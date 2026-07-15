@@ -1,9 +1,10 @@
 include /etc/sway/config.d/*
 exec dbus-update-activation-environment DISPLAY I3SOCK SWAYSOCK WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 
-set $c0 #2e3440
-set $c1 #3b4252
-set $c2 #b48ead
+set $c0  #111111
+set $c1  #666666
+set $c2  #dcdccc
+set $fnt Terminus Regular 12
 
 output HDMI-A-1 {
     mode 1920x1080@100.000Hz
@@ -18,8 +19,10 @@ input type:pointer {
 input type:keyboard xkb_layout pt
 
 for_window [class=".*"] floating enable
-for_window [class=".*"] border pixel 2
+for_window [class=".*"] border normal 1
 floating_modifier Mod4 normal
+gaps inner 8
+font pango:$fnt
 
 bindsym Mod4+q kill
 bindsym Mod4+h focus left
@@ -48,7 +51,7 @@ bindsym Mod4+s floating toggle
 bindsym Mod4+Space focus mode_toggle
 bindsym Mod4+r mode "resize"
 bindsym Mod4+Return exec foot
-bindsym Mod4+d exec wmenu-run -f "Noto Sans Mono 12" -N "$c0" -n "$c2" -s "$c0" -S "$c2"
+bindsym Mod4+d exec wmenu-run -f "$fnt" -N "$c0" -n "$c2" -s "$c0" -S "$c2"
 bindsym Print exec ~/scripts/prnt
 bindsym Shift+Print exec ~/scripts/prnt -s
 bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
