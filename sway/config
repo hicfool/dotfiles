@@ -1,10 +1,10 @@
 include /etc/sway/config.d/*
 exec dbus-update-activation-environment DISPLAY I3SOCK SWAYSOCK WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 
-set $c0  #111111
-set $c1  #666666
-set $c2  #dcdccc
-set $fnt Terminus Regular 12
+set $c0  #000000
+set $c1  #7f7f7f
+set $c2  #e5e5e5
+set $fnt Noto Sans Mono 11.5
 
 output HDMI-A-1 {
     mode 1920x1080@100.000Hz
@@ -19,10 +19,10 @@ input type:pointer {
 input type:keyboard xkb_layout pt
 
 for_window [class=".*"] floating enable
-for_window [class=".*"] border normal 1
+for_window [class=".*"] border pixel 2
 floating_modifier Mod4 normal
-gaps inner 8
 font pango:$fnt
+gaps inner 8
 
 bindsym Mod4+q kill
 bindsym Mod4+h focus left
@@ -50,8 +50,9 @@ bindsym Mod4+f fullscreen
 bindsym Mod4+s floating toggle
 bindsym Mod4+Space focus mode_toggle
 bindsym Mod4+r mode "resize"
+bindsym Mod4+b bar mode toggle
 bindsym Mod4+Return exec foot
-bindsym Mod4+d exec wmenu-run -f "$fnt" -N "$c0" -n "$c2" -s "$c0" -S "$c2"
+bindsym Mod4+d exec wmenu-run -f "$fnt" -M "$c2" -m "$c0" -N "$c0" -n "$c2" -S "$c2" -s "$c0" -p "run:" -b
 bindsym Print exec ~/scripts/prnt
 bindsym Shift+Print exec ~/scripts/prnt -s
 bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
@@ -75,3 +76,23 @@ client.focused_inactive $c1     $c0   $c1    $c1     $c1
 client.unfocused        $c1     $c0   $c1    $c1     $c1
 client.urgent           $c1     $c0   $c1    $c1     $c1
 client.placeholder      $c1     $c0   $c1    $c1     $c1
+
+bar {
+    font pango:$fnt
+    position bottom
+    tray_padding 4
+    mode hide
+    hidden_state hide
+    modifier none
+
+    status_command while ~/scripts/status; do sleep 1; done
+
+    colors {
+        background $c0
+        statusline $c1
+        active_workspace   $c0 $c0 $c2
+        focused_workspace  $c0 $c0 $c2
+        inactive_workspace $c0 $c0 $c1
+        binding_mode       $c0 $c0 $c2
+    }
+}
