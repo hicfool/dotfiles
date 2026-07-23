@@ -4,7 +4,7 @@ exec dbus-update-activation-environment DISPLAY I3SOCK SWAYSOCK WAYLAND_DISPLAY 
 set $c0  #eeeeee
 set $c1  #bcbcbc
 set $c2  #d75f00
-set $fnt Noto Sans Mono 11.5
+set $fnt Noto Sans Mono 11
 
 output HDMI-A-1 {
     mode 1920x1080@100.000Hz
