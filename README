@@ -13,6 +13,8 @@ foot
 foot-themes
 fonts-terminus
 sway
+xdg-desktop-portal
+xdg-desktop-portal-wlr
 wmenu
 ddcutil
 pactl
