@@ -17,4 +17,4 @@ xdg-desktop-portal
 xdg-desktop-portal-wlr
 wmenu
 ddcutil
-pactl
+pulseaudio-utils
