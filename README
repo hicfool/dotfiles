@@ -13,9 +13,9 @@ foot
 foot-themes
 fonts-terminus
 fonts-noto
-fonts-noto-color-emoji
 fonts-noto-cjk
 fonts-noto-cjk-extra
+fonts-noto-color-emoji
 sway
 xdg-desktop-portal
 xdg-desktop-portal-wlr
