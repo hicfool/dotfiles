@@ -12,6 +12,9 @@ wl-clipboard
 foot
 foot-themes
 fonts-terminus
+fonts-noto-color-emoji
+fonts-noto-cjk
+fonts-noto-cjk-extra
 sway
 xdg-desktop-portal
 xdg-desktop-portal-wlr
