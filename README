@@ -17,4 +17,6 @@ xdg-desktop-portal
 xdg-desktop-portal-wlr
 wmenu
 ddcutil
+pulseaudio
 pulseaudio-utils
+pavucontrol
