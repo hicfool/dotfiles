@@ -1,15 +1,15 @@
 include /etc/sway/config.d/*
 exec dbus-update-activation-environment DISPLAY I3SOCK SWAYSOCK WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 
-set $c0  #2D2A2E
-set $c1  #403E41
-set $c2  #FF6188
-set $fnt Terminus (TTF) 15
+set $c0  #282828
+set $c1  #928374
+set $c2  #ebdbb2
+set $fnt DejaVu Sans Mono 11
 seat * xcursor_theme Adwaita 24
 
 output HDMI-A-1 {
     mode 1920x1080@100.000Hz
-    bg $c0 solid_color
+    bg #458588 solid_color
 }
 
 input type:pointer {
@@ -24,7 +24,7 @@ for_window [class=".*"] border pixel 2
 titlebar_border_thickness 2
 floating_modifier Mod4 normal
 font pango:$fnt
-gaps inner 16
+gaps inner 32
 
 bindsym Mod4+q kill
 bindsym Mod4+h focus left
@@ -54,7 +54,8 @@ bindsym Mod4+Space focus mode_toggle
 bindsym Mod4+r mode "resize"
 bindsym Mod4+b bar mode toggle
 bindsym Mod4+Return exec foot
-bindsym Mod4+d exec wmenu-run -f "$fnt" -M "$c2" -m "$c0" -N "$c0" -n "$c2" -S "$c2" -s "$c0" -p "run:"
+#bindsym Mod4+d exec wmenu-run -f "$fnt" -M "$c2" -m "$c0" -N "$c0" -n "$c2" -S "$c2" -s "$c0" -p "run:"
+bindsym Mod4+d exec tofi-run | xargs swaymsg exec --
 bindsym Print exec ~/scripts/prnt
 bindsym Shift+Print exec ~/scripts/prnt -s
 bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
@@ -86,16 +87,17 @@ bar {
     mode hide
     hidden_state hide
     modifier none
+    height 40
 
     status_command while ~/scripts/status; do sleep 1; done
 
     colors {
-        background $c0
-        statusline $c1
+        background         $c0
+        statusline         $c2
         active_workspace   $c0 $c0 $c2
         focused_workspace  $c0 $c0 $c2
         inactive_workspace $c0 $c0 $c1
-        urgent_workspace   $c0 $c0 $c2
-        binding_mode       $c0 $c0 $c2
+        urgent_workspace   $c0 $c0 $c1
+        binding_mode       $c0 $c0 $c1
     }
 }
